@@ -1,0 +1,326 @@
+body {
+  font-size: 15px;
+  font-family: "PF Encore Sans Pro", sans-serif;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.15s;
+}
+
+.top .langs span {
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .top .phones a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header .contacts_btn {
+    padding: 10px 22px 10px 22px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header .contacts_btn span {
+    font-size: 15px;
+  }
+}
+
+.navbar {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+}
+@media screen and (max-width: 1200px) {
+  .navbar {
+    font-size: 15px;
+  }
+}
+.navbar li {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.navbar svg {
+  transition: all 0.3s;
+}
+.navbar .catalog {
+  position: relative;
+}
+.navbar .catalog::after {
+  content: url(../../img/Catalog_border.png);
+  width: 77px;
+  position: absolute;
+  top: 10px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1200px) {
+  .navbar .catalog::after {
+    font-size: 15px;
+    width: 65px;
+  }
+}
+.navbar .catalog,
+.navbar .about,
+.navbar .reference,
+.navbar .content {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.navbar .catalog .submenu,
+.navbar .about .submenu,
+.navbar .reference .submenu,
+.navbar .content .submenu {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#menu {
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+#menu.active {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.catalog_wrapper {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+@media screen and (max-width: 767px) {
+  .catalog_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+}
+
+#close_menu {
+  position: absolute;
+  top: 13.5px;
+  right: 10px;
+  transform: scale(0);
+  z-index: -1;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+#close_menu.show {
+  visibility: visible;
+  z-index: 1;
+  transform: scale(1);
+}
+
+#burger_menu {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  transform: scale(1);
+  z-index: 1;
+  transition: all 0.3s;
+}
+#burger_menu.hide {
+  visibility: hidden;
+  transform: scale(0);
+  z-index: -1;
+}
+
+.menu-navbar .catalog,
+.menu-navbar .about,
+.menu-navbar .reference,
+.menu-navbar .content {
+  display: flex;
+  align-items: center;
+}
+.menu-navbar li {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.menu-navbar .padding-b_100 {
+  padding-bottom: 100px;
+}
+.menu-navbar .submenu {
+  position: absolute;
+  top: 30px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -5;
+  width: -moz-max-content;
+  width: max-content;
+  transition: all 0.4s;
+}
+.menu-navbar .submenu.show {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+.menu-navbar li.active {
+  color: #e31e24;
+}
+.menu-navbar svg.rotate_180 {
+  transform: rotate(-180deg);
+}
+
+.header_sticky {
+  top: 0px;
+}
+
+header #search_btn {
+  padding: 12px 12px 13px 13px;
+  border: 1px #e31e24 solid;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+header #search_btn:hover {
+  border: 1px white solid;
+  background: #e31e24;
+}
+header #search_btn:hover .search_icon {
+  fill: #fff;
+}
+header .group path {
+  transition: all 0.3s ease-in-out;
+}
+header .group:hover svg path {
+  fill: #e31e24;
+}
+header #search_block {
+  transition: all 0.3s;
+}
+header #search_block.top-0 {
+  visibility: visible;
+  top: 0 !important;
+}
+
+.mt_83 {
+  margin-top: 83px;
+}
+
+body {
+  background: #f7f7f7;
+}
+
+.references {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 9px;
+  margin-top: 22px;
+  margin-bottom: 40px;
+  color: rgba(69, 69, 69, 0.7);
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.catalog_list {
+  width: 100%;
+  max-width: 353px;
+  min-width: 345px;
+  background: #fff;
+  padding-bottom: 20px;
+  padding-top: 24px;
+  border-radius: 20px;
+}
+.catalog_list h3 {
+  color: #484848;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+.catalog_list .categories {
+  color: rgba(95, 95, 95, 0.8);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  word-wrap: break-word;
+}
+.catalog_list .categories .category_item {
+  background-color: #f7f7f7;
+  transition: all 0.3s;
+}
+.catalog_list .categories .category_item:hover {
+  background-color: #767676;
+  color: #fff;
+}
+.catalog_list .categories .category_item.active {
+  background-color: #767676;
+  color: #fff;
+}
+.catalog_list button {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  word-wrap: break-word;
+  color: #e31e24;
+  background: white;
+  overflow: hidden;
+  border: 1px #e31e24 solid;
+  transition: all 0.3s;
+}
+.catalog_list button:hover {
+  color: #fff;
+  background: #e31e24;
+  border: 1px #fff solid;
+}
+.catalog_list button:hover path {
+  fill: #fff;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 17px;
+}
+.cards .card {
+  flex: 1 1 calc(33.333% - 17px);
+  max-width: 290px;
+  min-width: 184px;
+  box-sizing: border-box;
+}
+.cards .card .card_description {
+  color: rgba(95, 95, 95, 0.8);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 22px;
+  word-wrap: break-word;
+  padding-left: 23px;
+  padding-right: 42px;
+}
+@media (max-width: 600px) {
+  .cards .card {
+    flex: 1 1 calc(50% - 17px);
+  }
+}
+
+.pagination .pagination_item {
+  width: 32px;
+  height: 32px;
+  padding: 5px 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+.pagination .count .pagination_item {
+  border: 1px solid #dfe3e8;
+  color: #414141;
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+  word-wrap: break-word;
+  transition: all 0.3s;
+}
+.pagination .count .pagination_item:hover {
+  border: 1px solid #e31e24;
+  color: #e31e24;
+}/*# sourceMappingURL=catalog.css.map */

@@ -1,72 +1,36 @@
 body {
-  font-size: 15px;
-  font-family: "PF Encore Sans Pro", sans-serif;
-  font-weight: 600;
-  background: #fff;
-  position: relative;
-}
-.top {
-  .langs {
-    span {
-      cursor: pointer;
-    }
-  }
-}
-.header {
-  position: sticky;
-  top: 0px;
-  z-index: 100;
-}
-.navbar {
-  li {
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: 300;
-    cursor: pointer;
-  }
-  svg {
-    transition: rotate 0.15s;
-  }
-  .catalog {
-    position: relative;
-    &::after {
-      content: url(../../img/Catalog_border.png);
-      width: 77px;
-      position: absolute;
-      top: 10px;
-    }
-  }
-  .catalog,
-  .about,
-  .reference,
-  .content {
-    display: flex;
-    align-items: center;
-    .submenu {
-      visibility: hidden;
-      opacity: 0;
-    }
-  }
-}
-header {
-  .search {
-    padding: 12px 12px 13px 13px;
-    border: 1px #e31e24 solid;
-    border-radius: 100px;
-    cursor: pointer;
-    transition: all 0.3s;
-    &:hover {
-      border: 1px white solid;
-      background: #e31e24;
-      .search_icon {
-        fill: #fff;
-      }
-    }
+  &.lock {
+    overflow: hidden;
   }
 }
 
+
 .first {
   margin-bottom: 30px;
+  .offer {
+    @media screen and (max-width: 1200px) {
+      padding-top: 100px;
+      h1 {
+        font-size: 50px;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      h1 {
+        font-size: 34px;
+        line-height: 2.6rem;
+      }
+    }
+    .swiper-wrapper {
+      @media screen and (min-width: 1280px) {
+        width: 55rem;
+      }
+    }
+  }
+  .slider_block {
+    @media screen and (max-width: 425px) {
+      margin-left: -12px;
+    }
+  }
   .offer_bg_img_1 {
     background: url(../../img/Offer_background.png) no-repeat center center;
     background-size: cover;
@@ -130,9 +94,7 @@ header {
     }
   }
 }
-.swiper {
-  margin: 0 !important;
-}
+
 .galary-slider {
   .galary-img_1 {
     background: url(../../img/galary/1.png) no-repeat center center;
@@ -170,7 +132,7 @@ line {
   .client-slider-btn-prev::after,
   .client-slider-btn-next::after {
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
   }
   .partner-slider-btn-prev::after,
   .partner-slider-btn-next::after {
@@ -200,7 +162,28 @@ line {
     }
   }
 }
-
+.catalog_btns {
+  min-width: 100%;
+  img {
+    @media screen and (max-width: 1200px) {
+      max-width: 180px;
+    }
+    @media screen and (max-width: 980px) {
+      max-width: 130px;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+  button {
+    @media screen and (max-width: 1200px) {
+      padding: 35px 30px 35px 29px;
+    }
+    @media screen and (max-width: 980px) {
+      padding: 30px 25px 30px 24px;
+    }
+  }
+}
 .fourth {
   .questions {
     .quession_icon {
@@ -210,6 +193,25 @@ line {
       .quession_icon {
         transform: scale(1.1);
       }
+    }
+  }
+}
+.fifth {
+  .client_img {
+    @media screen and (max-width: 1052px) {
+      display: none;
+    }
+  }
+}
+.sixth {
+  .news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 42px;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
