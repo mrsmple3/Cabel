@@ -130,6 +130,72 @@ catalogItems.forEach((item) => {
   });
 });
 
+//
+const previousPagi = document.querySelector(".previous_pagination");
+const nextPagi = document.querySelector(".next_pagination");
+const countPagi = document.querySelectorAll(".count .pagination_item");
+
+countPagi[0].classList.add("active");
+
+if (countPagi[0].classList.contains("active")) {
+  previousPagi.classList.add("noactive");
+}
+if (countPagi[countPagi.length - 1].classList.contains("active")) {
+  nextPagi.classList.add("noactive");
+}
+previousPagi.addEventListener("click", function (event) {
+  if (this.classList.contains("noactive")) {
+    event.preventDefault(); // Предотвращаем переход по ссылке при активации класса "noactive"
+  }
+});
+
+nextPagi.addEventListener("click", function (event) {
+  if (this.classList.contains("noactive")) {
+    event.preventDefault(); // Предотвращаем переход по ссылке при активации класса "noactive"
+  }
+});
+//
+const selectCategories = document.getElementById("mobile_categories");
+const options = document.querySelector(".select_dropdown .options");
+const currentOption = document.querySelector(".current_option");
+currentOption.textContent = catalogItems[0].textContent;
+const allOptions = [];
+const optionsSvg = document.querySelector(".select_dropdown svg");
+
+if (window.innerWidth <= 768) {
+  selectCategories.addEventListener("click", () => {
+    options.classList.toggle("active");
+    optionsSvg.classList.toggle("active");
+  });
+
+  catalogItems.forEach((category) => {
+    const option = document.createElement("li");
+    option.classList.add("dropdown_item");
+    allOptions.push(option);
+    option.textContent = category.textContent;
+    //change text in currentOpstion
+    option.addEventListener("click", () => {
+      currentOption.textContent = option.textContent;
+      containerCards.innerHTML = "";
+      GenerateCards(
+        option.textContent.trim().replace(/\s{2,}/g, " "),
+        Categories
+      );
+    });
+    options.appendChild(option);
+  });
+  //Click for all options
+  allOptions.forEach((option) => {
+    option.addEventListener("click", () => {
+      allOptions.forEach((option) => {
+        option.classList.remove("active");
+      });
+
+      option.classList.add("active");
+    });
+  });
+}
+
 function addCardClickHandler() {
   const cards = document.querySelectorAll(".card");
   cards.forEach((card) => {
@@ -150,11 +216,11 @@ function cardGenerate(card) {
       class="absolute top-[14px] right-[11px] flex items-center gap-[5px] z-[2]"
     >
       <a href="${card.href}" class="card-link">
-        <img src="./img/catalog_page/note_!.png" alt="!" />
+        <img src="./img/catalog_page/note_!.svg" alt="!" />
       </a>
       <a href="">
         <img
-          src="./img/catalog_page/note_download.png"
+          src="./img/catalog_page/note_download.svg"
           alt="download note"
         />
       </a>

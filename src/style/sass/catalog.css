@@ -5,6 +5,9 @@ body {
   position: relative;
   transition: all 0.15s;
 }
+body.lock {
+  overflow: hidden;
+}
 
 .top .langs span {
   cursor: pointer;
@@ -227,6 +230,12 @@ body {
   padding-top: 24px;
   border-radius: 20px;
 }
+@media (max-width: 768px) {
+  .catalog_list {
+    max-width: 100%;
+    min-width: 300px;
+  }
+}
 .catalog_list h3 {
   color: #484848;
   font-size: 25px;
@@ -253,7 +262,7 @@ body {
   background-color: #767676;
   color: #fff;
 }
-.catalog_list button {
+.catalog_list a {
   text-align: center;
   font-size: 18px;
   font-weight: 600;
@@ -265,13 +274,26 @@ body {
   border: 1px #e31e24 solid;
   transition: all 0.3s;
 }
-.catalog_list button:hover {
+.catalog_list a:hover {
   color: #fff;
   background: #e31e24;
   border: 1px #fff solid;
 }
-.catalog_list button:hover path {
+.catalog_list a:hover path {
   fill: #fff;
+}
+@media (max-width: 768px) {
+  .catalog_list a {
+    border: none !important;
+  }
+}
+.catalog_list .moblie_download:hover {
+  color: #e31e24;
+  background: white;
+  border: 1px #fff solid;
+}
+.catalog_list .moblie_download:hover path {
+  fill: #e31e24;
 }
 
 .cards {
@@ -283,7 +305,7 @@ body {
 .cards .card {
   flex: 1 1 calc(33.333% - 17px);
   max-width: 290px;
-  min-width: 184px;
+  min-width: 180px;
   box-sizing: border-box;
 }
 .cards .card .card_description {
@@ -295,9 +317,14 @@ body {
   padding-left: 23px;
   padding-right: 42px;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .cards .card {
-    flex: 1 1 calc(50% - 17px);
+    max-width: 184px;
+  }
+}
+@media (max-width: 768px) {
+  .cards .card {
+    flex: 1 1 calc(30% - 17px);
   }
 }
 
@@ -309,6 +336,15 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 7px;
+}
+.pagination .pagination_item.active {
+  border: 1px solid #e31e24;
+  color: #e31e24;
+}
+.pagination .pagination_item.noactive {
+  border: 1px solid white;
+  background-color: #efcbcc;
+  cursor: auto;
 }
 .pagination .count .pagination_item {
   border: 1px solid #dfe3e8;
@@ -323,4 +359,57 @@ body {
 .pagination .count .pagination_item:hover {
   border: 1px solid #e31e24;
   color: #e31e24;
+}
+.pagination .count .pagination_item.active {
+  border: 1px solid #e31e24;
+  color: #e31e24;
+}
+
+.select_dropdown {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  word-wrap: break-word;
+  padding: 17.5px 18px;
+  padding-right: 40px;
+  background: #767676;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.select_dropdown svg {
+  transform: rotate(0);
+  transition: all 0.3s;
+}
+.select_dropdown svg.active {
+  transform: rotate(-180deg);
+}
+.select_dropdown .options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  color: rgba(95, 95, 95, 0.8);
+  padding: 17.5px 18px;
+  border-radius: 10px;
+  visibility: hidden;
+  transform: translateY(-25px);
+  opacity: 0;
+  z-index: 3;
+  transition: all 0.3s;
+}
+.select_dropdown .options.active {
+  visibility: visible;
+  transform: translateY(0);
+  opacity: 1;
+}
+.select_dropdown .options li {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 15px 15px;
+  transition: all 0.3s;
+}
+.select_dropdown .options li.active {
+  color: white;
+  background-color: #767676;
 }/*# sourceMappingURL=catalog.css.map */

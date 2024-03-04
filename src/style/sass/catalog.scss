@@ -3,18 +3,7 @@ body {
   background: #f7f7f7;
 }
 .references {
-  display: inline-flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 9px;
-  margin-top: 22px;
-  margin-bottom: 40px;
-  color: rgba(69.06, 69.06, 69.06, 0.7);
-  font-size: 16px;
-  font-family: Montserrat;
-  font-weight: 400;
-  line-height: 20px;
-  word-wrap: break-word;
+  @include references;
 }
 .catalog_list {
   width: 100%;
@@ -24,6 +13,10 @@ body {
   padding-bottom: 20px;
   padding-top: 24px;
   border-radius: 20px;
+  @media (max-width: 768px) {
+    max-width: 100%;
+    min-width: 300px;
+  }
   h3 {
     color: #484848;
     font-size: 25px;
@@ -50,7 +43,7 @@ body {
       }
     }
   }
-  button {
+  a {
     text-align: center;
     font-size: 18px;
     font-weight: 600;
@@ -69,6 +62,19 @@ body {
         fill: #fff;
       }
     }
+    @media (max-width: 768px) {
+      border: none !important;
+    }
+  }
+  .moblie_download {
+    &:hover {
+      color: $red;
+      background: white;
+      border: 1px #fff solid;
+      path {
+        fill: $red;
+      }
+    }
   }
 }
 
@@ -80,7 +86,7 @@ body {
   .card {
     flex: 1 1 calc(33.333% - 17px);
     max-width: 290px;
-    min-width: 184px;
+    min-width: 180px;
     box-sizing: border-box;
     .card_description {
       color: rgba(94.56, 94.56, 94.56, 0.8);
@@ -91,10 +97,13 @@ body {
       padding-left: 23px;
       padding-right: 42px;
     }
+    @media (max-width: 768px) {
+      max-width: 184px;
+    }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .card {
-      flex: 1 1 calc(50% - 17px);
+      flex: 1 1 calc(30% - 17px);
     }
   }
 }
@@ -107,6 +116,15 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 7px;
+    &.active {
+      border: 1px solid $red;
+      color: $red;
+    }
+    &.noactive {
+      border: 1px solid white;
+      background-color: #efcbcc;
+      cursor: auto;
+    }
   }
   .count {
     .pagination_item {
@@ -123,6 +141,58 @@ body {
       &:hover {
         border: 1px solid $red;
         color: $red;
+      }
+      &.active {
+        border: 1px solid $red;
+        color: $red;
+      }
+    }
+  }
+}
+.select_dropdown {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  word-wrap: break-word;
+  padding: 17.5px 18px;
+  padding-right: 40px;
+  background: $gray;
+  border-radius: 10px;
+  transition: all 0.3s;
+  svg {
+    transform: rotate(0);
+    transition: all 0.3s;
+    &.active {
+      transform: rotate(-180deg);
+    }
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    color: rgba(94.56, 94.56, 94.56, 0.8);
+    padding: 17.5px 18px;
+    border-radius: 10px;
+    visibility: hidden;
+    transform: translateY(-25px);
+    opacity: 0;
+    z-index: 3;
+    transition: all 0.3s;
+    &.active {
+      visibility: visible;
+      transform: translateY(0);
+      opacity: 1;
+    }
+    li {
+      background-color: #f7f7f7;
+      border-radius: 10px;
+      padding: 15px 15px;
+      transition: all 0.3s;
+      &.active {
+        color: white;
+        background-color: $gray;
       }
     }
   }

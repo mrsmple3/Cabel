@@ -1,11 +1,42 @@
 $red: #e31e24;
 $gray: #767676;
+@mixin references {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 9px;
+  margin-top: 22px;
+  margin-bottom: 40px;
+  color: rgba(69.06, 69.06, 69.06, 0.7);
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+@mixin redButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $red;
+  border-radius: 100px;
+  padding: 18px 12px;
+  text-align: center;
+  color: #e31e24;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  word-wrap: break-word;
+}
 body {
   font-size: 15px;
   font-family: "PF Encore Sans Pro", sans-serif;
   font-weight: 600;
   position: relative;
   transition: all 0.15s;
+  &.lock {
+    overflow: hidden;
+  }
 }
 
 .top {

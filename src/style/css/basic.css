@@ -5,6 +5,9 @@ body {
   position: relative;
   transition: all 0.15s;
 }
+body.lock {
+  overflow: hidden;
+}
 
 .top .langs span {
   cursor: pointer;
