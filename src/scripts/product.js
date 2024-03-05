@@ -20,10 +20,10 @@ let swiperProduct = new Swiper(".products_offer", {
   },
 });
 let adaptiveSlider = window.innerWidth < 768 ? 2 : 4;
-let adaptSpaces = window.innerWidth < 768 ? 15 : 45;
+let adaptSpaces = window.innerWidth < 768 ? 10 : 45;
 window.addEventListener("resize", function () {
   adaptiveSlider = window.innerWidth < 768 ? 2 : 4;
-  adaptSpaces = window.innerHeight < 768 ? 15 : 45;
+  adaptSpaces = window.innerHeight < 768 ? 10 : 45;
   swiperRecomendation.params.slidesPerView = adaptiveSlider;
   swiperRecomendation.params.spaceBetween = adaptSpaces;
   swiperRecomendation.update();

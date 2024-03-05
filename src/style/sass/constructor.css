@@ -334,7 +334,7 @@ body {
 .constructor .constructor_container .constructor_item .arrow_down {
   transform: rotate(0);
   pointer-events: none;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 .constructor .constructor_container .constructor_item .arrow_down.active {
   transform: rotate(-180deg);
@@ -353,7 +353,7 @@ body {
   padding: 14px 16px;
   border: 1px #b3b3b3 solid;
   border-radius: 10px;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 .constructor .constructor_container .constructor_item .drop_down.active {
   border-color: #e31e24;
@@ -371,7 +371,7 @@ body {
   transform: translateY(-25px);
   opacity: 0;
   z-index: 3;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 .constructor .constructor_container .constructor_item .drop_down .options.active {
   visibility: visible;

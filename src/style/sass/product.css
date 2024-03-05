@@ -352,6 +352,8 @@ body {
 #tab_constructor table {
   border-collapse: collapse;
   width: 100%;
+  color: #414141;
+  font-size: 17px;
 }
 #tab_description td,
 #tab_constructor td {
