@@ -305,8 +305,13 @@ body {
 .cards .card {
   flex: 1 1 calc(33.333% - 17px);
   max-width: 290px;
-  min-width: 180px;
+  min-width: 150px;
   box-sizing: border-box;
+  border-bottom: 4px solid #fff;
+  transition: 0.3s;
+}
+.cards .card:hover {
+  border-bottom: 4px solid #dc2626;
 }
 .cards .card .card_description {
   color: rgba(95, 95, 95, 0.8);

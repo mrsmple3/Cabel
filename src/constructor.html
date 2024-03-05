@@ -5,22 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./garniture/stylesheet.css" />
     <link rel="stylesheet" href="./style/css/basic.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="./style/sass/constructor.css" />
+    <link rel="stylesheet" href="./style/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style/sass/product.css" />
-    <link rel="stylesheet" href="./style/output.css" />
     <link rel="icon" href="./img/logo.png" />
     <title>ProCab product</title>
   </head>
   <body class="wrapper overflow-x-hidden">
+    <!-- menu  -->
     <div
       id="menu"
       class="xl:hidden w-full h-[92%] fixed top-[80px] left-0 right-0 z-[16] overflow-y-auto overflow-x-hidden bg-neutral-100 py-[60px] max-[400px]:pl-[10px]"
@@ -233,6 +230,7 @@
         </div>
       </div>
     </div>
+    <!-- header  -->
     <header
       id="header"
       class="lock_padding max-md:fixed w-full z-[15] top-[0] flex flex-col items-center justify-center max-md:mb-[13px] max-md:overflow-x-hidden"
@@ -668,383 +666,753 @@
         </div>
       </div>
     </header>
+    <!-- main -->
     <main
-      class="product first max-w-[1210px] mx-auto flex flex-col items-start mb-[65px] overflow-x-hidden max-md:max-w-[380px] max-md:mt-[83px] max-xl:px-[10px]"
+      class="constructor first w-full overflow-hidden max-md:mt-[83px] max-xl:px-[10px]"
     >
-      <div
-        class="popup fixed z-20 top-0 left-0 h-full w-full bg-black bg-opacity-20 overflow-y-auto max-md:px-[6px]"
-      >
-        <div class="popup_content w-full max-w-[555px] py-[43px]">
+      <div class="max-w-[1210px] mx-auto max-md:max-w-[380px]">
+        <div class="references max-md:flex-wrap mb-[42px]">
+          <span>Категории продукции</span>
+          <img src="./img/icons/arrow_left_little.svg" alt=">" />
+          <span class="current_category">Конструктор</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <h2 class="mb-[35px] max-md:mb-[14px]">Конструктор</h2>
           <img
-            id="close_popup"
-            src="./img/icons/x red.svg"
-            alt="x"
-            class="absolute w-7 h-7 top-5 right-[22px] z-[2] cursor-pointer"
+            src="./img/constructor/constructor_page_icon.svg"
+            alt="icon"
+            class="md:hidden"
           />
-          <form class="px-[45px] mb-[26px]">
-            <h3>Оставить заявку</h3>
-            <span class="form_sub">ПВВГНГ(А)-LS, ПВБШВНГ(А)-LS</span>
-            <input
-              type="text"
-              name="name"
-              placeholder="Ваше имя"
-              class="name_input mb-[18px] outline-none"
+        </div>
+      </div>
+      <div class="constructor_container w-full mb-[38px] max-xl:px-[10px]">
+        <div
+          class="constructor_block max-w-[1210px] mx-auto bg-white max-md:max-w-[380px]"
+        >
+          <div class="flex items-center justify-between mb-7">
+            <div class="flex items-center gap-[7px]">
+              <h5>Поиск кабельной продукции с помощью онлайн-конструктора</h5>
+              <div
+                class="w-[7px] h-[7px] rounded-full bg-red-600 max-md:hidden"
+              ></div>
+            </div>
+            <img
+              src="./img/constructor/constructor_page_icon.svg"
+              alt="icon"
+              class="max-md:hidden"
             />
-            <input
-              type="text"
-              name="phone"
-              placeholder="Номер телефоона"
-              class="phone_input mb-[18px] outline-none"
-            />
-            <button type="submit" class="submit_btn w-full py-[13px]">
-              Отправить
-            </button>
-          </form>
-          <div class="flex flex-col items-start gap-[25px] px-[45px]">
-            <p class="popup_sub">
-              Отправляя данную форму, вы соглашаетесь на обработку персональных
-              данных.
-            </p>
-            <div class="phone flex items-center gap-1">
-              <a href="tel: +998 (55) 506 54 44">+998 (55) 506 54 44 </a>
-              | <a href="tel: +998 (71) 257 60 00">+998 (71) 257 60 00</a> |
-              <a href="tel: +998 (98) 126 04 44">+998 (98) 126 04 44</a>
+          </div>
+          <div class="constructors mb-[65px]">
+            <div
+              class="constructor_item relative flex flex-col items-start gap-[14px]"
+            >
+              <svg
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute bottom-4 right-5 pointer-events-none"
+              >
+                <path
+                  d="M20.7716 19.5344L15.5488 14.3115C16.9721 12.5708 17.6718 10.3496 17.5034 8.10737C17.3349 5.86516 16.3111 3.77347 14.6436 2.26496C12.9762 0.756454 10.7928 -0.0534618 8.54494 0.00274102C6.29711 0.0589439 4.15687 0.976965 2.56692 2.56692C0.976965 4.15687 0.0589439 6.29711 0.00274102 8.54494C-0.0534618 10.7928 0.756454 12.9762 2.26496 14.6436C3.77347 16.3111 5.86516 17.3349 8.10737 17.5034C10.3496 17.6718 12.5708 16.9721 14.3115 15.5488L19.5344 20.7716C19.6994 20.931 19.9204 21.0192 20.1499 21.0172C20.3793 21.0152 20.5987 20.9232 20.761 20.761C20.9232 20.5987 21.0152 20.3793 21.0172 20.1499C21.0192 19.9204 20.931 19.6994 20.7716 19.5344ZM8.77801 15.778C7.39354 15.778 6.04016 15.3675 4.88902 14.5983C3.73787 13.8291 2.84066 12.7359 2.31085 11.4568C1.78104 10.1777 1.64241 8.77024 1.91251 7.41237C2.18261 6.05451 2.84929 4.80723 3.82826 3.82826C4.80723 2.84929 6.05451 2.18261 7.41237 1.91251C8.77024 1.64241 10.1777 1.78104 11.4568 2.31085C12.7359 2.84066 13.8291 3.73787 14.5983 4.88902C15.3675 6.04016 15.778 7.39354 15.778 8.77801C15.7759 10.6339 15.0378 12.4131 13.7255 13.7255C12.4131 15.0378 10.6339 15.7759 8.77801 15.778Z"
+                  fill="#B3B3B3"
+                  class="icon_search"
+                />
+              </svg>
+              <label for="menu_cabel" class="input_span"> Марка кабеля: </label>
+              <input
+                id="menu_cabel"
+                type="text"
+                name="search"
+                class="input outline-none"
+                placeholder="Введите наименование..."
+              />
+            </div>
+            <div
+              class="constructor_item constructor_down relative flex flex-col items-start gap-[14px]"
+            >
+              <svg
+                width="15"
+                height="8"
+                viewBox="0 0 15 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="arrow_down absolute bottom-5 right-5"
+              >
+                <path
+                  d="M7.54939 7.49817C7.08272 7.49817 6.64289 7.31617 6.31156 6.986L0.150391 0.824833L0.975224 0L7.13639 6.16117C7.35689 6.38167 7.74072 6.38167 7.96122 6.16117L14.1224 0L14.9472 0.824833L8.78606 6.986C8.45589 7.31617 8.01606 7.49817 7.54822 7.49817H7.54939Z"
+                  fill="#5F5F5F"
+                />
+              </svg>
+              <label class="input_span"> Стандарт: </label>
+              <div class="drop_down standart cursor-pointer">
+                <span class="current_option">Выберите вариант</span>
+                <ul
+                  class="options w-full absolute left-0 top-[85px] h-[210px] overflow-y-auto"
+                >
+                  <li class="option">Пункт 1</li>
+                  <li class="option">Пункт 2</li>
+                  <li class="option">Пункт 3</li>
+                  <li class="option">Пункт 4</li>
+                  <li class="option">Пункт 5</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="constructor_item constructor_down relative flex flex-col items-start gap-[14px]"
+            >
+              <svg
+                width="15"
+                height="8"
+                viewBox="0 0 15 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="arrow_down absolute bottom-5 right-5"
+              >
+                <path
+                  d="M7.54939 7.49817C7.08272 7.49817 6.64289 7.31617 6.31156 6.986L0.150391 0.824833L0.975224 0L7.13639 6.16117C7.35689 6.38167 7.74072 6.38167 7.96122 6.16117L14.1224 0L14.9472 0.824833L8.78606 6.986C8.45589 7.31617 8.01606 7.49817 7.54822 7.49817H7.54939Z"
+                  fill="#5F5F5F"
+                />
+              </svg>
+              <label class="input_span"> Огнестойкое исполнение: </label>
+              <div class="drop_down standart cursor-pointer">
+                <span class="current_option">Выберите вариант</span>
+                <ul
+                  class="options w-full absolute left-0 top-[85px] h-[210px] overflow-y-auto"
+                >
+                  <li class="option">Пункт 1</li>
+                  <li class="option">Пункт 2</li>
+                  <li class="option">Пункт 3</li>
+                  <li class="option">Пункт 4</li>
+                  <li class="option">Пункт 5</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="constructor_item constructor_down relative flex flex-col items-start gap-[14px]"
+            >
+              <svg
+                width="15"
+                height="8"
+                viewBox="0 0 15 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="arrow_down absolute bottom-5 right-5"
+              >
+                <path
+                  d="M7.54939 7.49817C7.08272 7.49817 6.64289 7.31617 6.31156 6.986L0.150391 0.824833L0.975224 0L7.13639 6.16117C7.35689 6.38167 7.74072 6.38167 7.96122 6.16117L14.1224 0L14.9472 0.824833L8.78606 6.986C8.45589 7.31617 8.01606 7.49817 7.54822 7.49817H7.54939Z"
+                  fill="#5F5F5F"
+                />
+              </svg>
+              <label class="input_span"> Отрасль применения: </label>
+              <div class="drop_down standart cursor-pointer">
+                <span class="current_option">Выберите вариант</span>
+                <ul
+                  class="options w-full absolute left-0 top-[85px] h-[210px] overflow-y-auto"
+                >
+                  <li class="option">Пункт 1</li>
+                  <li class="option">Пункт 2</li>
+                  <li class="option">Пункт 3</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="constructor_item constructor_down relative flex flex-col items-start gap-[14px]"
+            >
+              <svg
+                width="15"
+                height="8"
+                viewBox="0 0 15 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="arrow_down absolute bottom-5 right-5"
+              >
+                <path
+                  d="M7.54939 7.49817C7.08272 7.49817 6.64289 7.31617 6.31156 6.986L0.150391 0.824833L0.975224 0L7.13639 6.16117C7.35689 6.38167 7.74072 6.38167 7.96122 6.16117L14.1224 0L14.9472 0.824833L8.78606 6.986C8.45589 7.31617 8.01606 7.49817 7.54822 7.49817H7.54939Z"
+                  fill="#5F5F5F"
+                />
+              </svg>
+              <label class="input_span"> Класс напряжения: </label>
+              <div class="drop_down standart cursor-pointer">
+                <span class="current_option">Выберите вариант</span>
+                <ul
+                  class="options w-full absolute left-0 top-[85px] h-[210px] overflow-y-auto"
+                >
+                  <li class="option">Пункт 1</li>
+                  <li class="option">Пункт 2</li>
+                  <li class="option">Пункт 3</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="constructor_item constructor_down relative flex flex-col items-start gap-[14px]"
+            >
+              <svg
+                width="15"
+                height="8"
+                viewBox="0 0 15 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="arrow_down absolute bottom-5 right-5"
+              >
+                <path
+                  d="M7.54939 7.49817C7.08272 7.49817 6.64289 7.31617 6.31156 6.986L0.150391 0.824833L0.975224 0L7.13639 6.16117C7.35689 6.38167 7.74072 6.38167 7.96122 6.16117L14.1224 0L14.9472 0.824833L8.78606 6.986C8.45589 7.31617 8.01606 7.49817 7.54822 7.49817H7.54939Z"
+                  fill="#5F5F5F"
+                />
+              </svg>
+              <label class="input_span"> Класс напряжения:</label>
+              <div class="drop_down standart cursor-pointer">
+                <span class="current_option">Выберите вариант</span>
+                <ul
+                  class="options w-full absolute left-0 top-[85px] h-[210px] overflow-y-auto"
+                >
+                  <li class="option">Пункт 1</li>
+                  <li class="option">Пункт 2</li>
+                  <li class="option">Пункт 3</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="constructor_item constructor_down relative flex flex-col items-start gap-[14px]"
+            >
+              <svg
+                width="15"
+                height="8"
+                viewBox="0 0 15 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="arrow_down absolute bottom-5 right-5"
+              >
+                <path
+                  d="M7.54939 7.49817C7.08272 7.49817 6.64289 7.31617 6.31156 6.986L0.150391 0.824833L0.975224 0L7.13639 6.16117C7.35689 6.38167 7.74072 6.38167 7.96122 6.16117L14.1224 0L14.9472 0.824833L8.78606 6.986C8.45589 7.31617 8.01606 7.49817 7.54822 7.49817H7.54939Z"
+                  fill="#5F5F5F"
+                />
+              </svg>
+              <label class="input_span">Материал изоляции: </label>
+              <div class="drop_down standart cursor-pointer">
+                <span class="current_option">Выберите вариант</span>
+                <ul
+                  class="options w-full absolute left-0 top-[85px] h-[210px] overflow-y-auto"
+                >
+                  <li class="option">Пункт 1</li>
+                  <li class="option">Пункт 2</li>
+                  <li class="option">Пункт 3</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="constructor_item constructor_down relative flex flex-col items-start gap-[14px]"
+            >
+              <svg
+                width="15"
+                height="8"
+                viewBox="0 0 15 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="arrow_down absolute bottom-5 right-5"
+              >
+                <path
+                  d="M7.54939 7.49817C7.08272 7.49817 6.64289 7.31617 6.31156 6.986L0.150391 0.824833L0.975224 0L7.13639 6.16117C7.35689 6.38167 7.74072 6.38167 7.96122 6.16117L14.1224 0L14.9472 0.824833L8.78606 6.986C8.45589 7.31617 8.01606 7.49817 7.54822 7.49817H7.54939Z"
+                  fill="#5F5F5F"
+                />
+              </svg>
+              <label class="input_span"> Материал жил: </label>
+              <div class="drop_down standart cursor-pointer">
+                <span class="current_option">Выберите вариант</span>
+                <ul
+                  class="options w-full absolute left-0 top-[85px] h-[210px] overflow-y-auto"
+                >
+                  <li class="option">Пункт 1</li>
+                  <li class="option">Пункт 2</li>
+                  <li class="option">Пункт 3</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="constructor_item constructor_down relative flex flex-col items-start gap-[14px]"
+            >
+              <svg
+                width="15"
+                height="8"
+                viewBox="0 0 15 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="arrow_down absolute bottom-5 right-5"
+              >
+                <path
+                  d="M7.54939 7.49817C7.08272 7.49817 6.64289 7.31617 6.31156 6.986L0.150391 0.824833L0.975224 0L7.13639 6.16117C7.35689 6.38167 7.74072 6.38167 7.96122 6.16117L14.1224 0L14.9472 0.824833L8.78606 6.986C8.45589 7.31617 8.01606 7.49817 7.54822 7.49817H7.54939Z"
+                  fill="#5F5F5F"
+                />
+              </svg>
+              <label class="input_span"> Количество жил: </label>
+              <div class="drop_down standart cursor-pointer">
+                <span class="current_option">Выберите вариант</span>
+                <ul
+                  class="options w-full absolute left-0 top-[85px] h-[210px] overflow-y-auto"
+                >
+                  <li class="option">Пункт 1</li>
+                  <li class="option">Пункт 2</li>
+                  <li class="option">Пункт 3</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="constructor_item constructor_down relative flex flex-col items-start gap-[14px]"
+            >
+              <svg
+                width="15"
+                height="8"
+                viewBox="0 0 15 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="arrow_down absolute bottom-5 right-5"
+              >
+                <path
+                  d="M7.54939 7.49817C7.08272 7.49817 6.64289 7.31617 6.31156 6.986L0.150391 0.824833L0.975224 0L7.13639 6.16117C7.35689 6.38167 7.74072 6.38167 7.96122 6.16117L14.1224 0L14.9472 0.824833L8.78606 6.986C8.45589 7.31617 8.01606 7.49817 7.54822 7.49817H7.54939Z"
+                  fill="#5F5F5F"
+                />
+              </svg>
+              <label class="input_span"> Тип защитной брони </label>
+              <div class="drop_down standart cursor-pointer">
+                <span class="current_option">Выберите вариант</span>
+                <ul
+                  class="options w-full absolute left-0 top-[85px] h-[210px] overflow-y-auto"
+                >
+                  <li class="option">Пункт 1</li>
+                  <li class="option">Пункт 2</li>
+                  <li class="option">Пункт 3</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="constructor_item constructor_down relative flex flex-col items-start gap-[14px]"
+            >
+              <svg
+                width="15"
+                height="8"
+                viewBox="0 0 15 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="arrow_down absolute bottom-5 right-5"
+              >
+                <path
+                  d="M7.54939 7.49817C7.08272 7.49817 6.64289 7.31617 6.31156 6.986L0.150391 0.824833L0.975224 0L7.13639 6.16117C7.35689 6.38167 7.74072 6.38167 7.96122 6.16117L14.1224 0L14.9472 0.824833L8.78606 6.986C8.45589 7.31617 8.01606 7.49817 7.54822 7.49817H7.54939Z"
+                  fill="#5F5F5F"
+                />
+              </svg>
+              <label class="input_span"> Тип экрана: </label>
+              <div class="drop_down standart cursor-pointer">
+                <span class="current_option">Выберите вариант</span>
+                <ul
+                  class="options w-full absolute left-0 top-[85px] h-[210px] overflow-y-auto"
+                >
+                  <li class="option">Пункт 1</li>
+                  <li class="option">Пункт 2</li>
+                  <li class="option">Пункт 3</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="constructor_item constructor_down relative flex flex-col items-start gap-[14px]"
+            >
+              <svg
+                width="15"
+                height="8"
+                viewBox="0 0 15 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="arrow_down absolute bottom-5 right-5"
+              >
+                <path
+                  d="M7.54939 7.49817C7.08272 7.49817 6.64289 7.31617 6.31156 6.986L0.150391 0.824833L0.975224 0L7.13639 6.16117C7.35689 6.38167 7.74072 6.38167 7.96122 6.16117L14.1224 0L14.9472 0.824833L8.78606 6.986C8.45589 7.31617 8.01606 7.49817 7.54822 7.49817H7.54939Z"
+                  fill="#5F5F5F"
+                />
+              </svg>
+              <label class="input_span">
+                Тип материала для наружной оболочки:
+              </label>
+              <div class="drop_down standart cursor-pointer">
+                <span class="current_option">Выберите вариант</span>
+                <ul
+                  class="options w-full absolute left-0 top-[85px] h-[210px] overflow-y-auto"
+                >
+                  <li class="option">Пункт 1</li>
+                  <li class="option">Пункт 2</li>
+                  <li class="option">Пункт 3</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="constructor_item constructor_down relative flex flex-col items-start gap-[14px]"
+            >
+              <svg
+                width="15"
+                height="8"
+                viewBox="0 0 15 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="arrow_down absolute bottom-5 right-5"
+              >
+                <path
+                  d="M7.54939 7.49817C7.08272 7.49817 6.64289 7.31617 6.31156 6.986L0.150391 0.824833L0.975224 0L7.13639 6.16117C7.35689 6.38167 7.74072 6.38167 7.96122 6.16117L14.1224 0L14.9472 0.824833L8.78606 6.986C8.45589 7.31617 8.01606 7.49817 7.54822 7.49817H7.54939Z"
+                  fill="#5F5F5F"
+                />
+              </svg>
+              <label class="input_span"> Тип защитной брони: </label>
+              <div class="drop_down standart cursor-pointer">
+                <span class="current_option">Выберите вариант</span>
+                <ul
+                  class="options w-full absolute left-0 top-[85px] h-[210px] overflow-y-auto"
+                >
+                  <li class="option">Пункт 1</li>
+                  <li class="option">Пункт 2</li>
+                  <li class="option">Пункт 3</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="constructor_item constructor_down relative flex flex-col items-start gap-[14px]"
+            >
+              <svg
+                width="15"
+                height="8"
+                viewBox="0 0 15 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="arrow_down absolute bottom-5 right-5"
+              >
+                <path
+                  d="M7.54939 7.49817C7.08272 7.49817 6.64289 7.31617 6.31156 6.986L0.150391 0.824833L0.975224 0L7.13639 6.16117C7.35689 6.38167 7.74072 6.38167 7.96122 6.16117L14.1224 0L14.9472 0.824833L8.78606 6.986C8.45589 7.31617 8.01606 7.49817 7.54822 7.49817H7.54939Z"
+                  fill="#5F5F5F"
+                />
+              </svg>
+              <label class="input_span"> Тип экрана: </label>
+              <div class="drop_down standart cursor-pointer">
+                <span class="current_option">Выберите вариант</span>
+                <ul
+                  class="options w-full absolute left-0 top-[85px] h-[210px] overflow-y-auto"
+                >
+                  <li class="option">Пункт 1</li>
+                  <li class="option">Пункт 2</li>
+                  <li class="option">Пункт 3</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="constructor_item constructor_down relative flex flex-col items-start gap-[14px]"
+            >
+              <svg
+                width="15"
+                height="8"
+                viewBox="0 0 15 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="arrow_down absolute bottom-5 right-5"
+              >
+                <path
+                  d="M7.54939 7.49817C7.08272 7.49817 6.64289 7.31617 6.31156 6.986L0.150391 0.824833L0.975224 0L7.13639 6.16117C7.35689 6.38167 7.74072 6.38167 7.96122 6.16117L14.1224 0L14.9472 0.824833L8.78606 6.986C8.45589 7.31617 8.01606 7.49817 7.54822 7.49817H7.54939Z"
+                  fill="#5F5F5F"
+                />
+              </svg>
+              <label class="input_span">
+                Тип материала для наружной оболочки:
+              </label>
+              <div class="drop_down standart cursor-pointer">
+                <span class="current_option">Выберите вариант</span>
+                <ul
+                  class="options w-full absolute left-0 top-[85px] h-[210px] overflow-y-auto"
+                >
+                  <li class="option">Пункт 1</li>
+                  <li class="option">Пункт 2</li>
+                  <li class="option">Пункт 3</li>
+                  <li class="option">Пункт 4</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="references max-md:flex-wrap">
-        <span>Категории продукции</span>
-        <img src="./img/icons/arrow_left_little.svg" alt=">" />
-        <span class="current_category">Категории продукции</span>
-      </div>
-      <div
-        class="w-full flex items-start justify-between gap-10 max-lg:flex-col max-lg:justify-start"
-      >
-        <div
-          class="products_offer swiper max-w-[560px] max-lg:mx-0 rounded-2xl"
-        >
-          <div
-            class="absolute left-[23px] bottom-[22px] inline-flex items-center gap-[14px] justify-center"
-          >
-            <button
-              class="swiper-button-prev swiper-offer-button-prev w-[50px] h-[50px] inline-flex bg-white rounded-[100px] shadow justify-center items-center"
-            ></button>
-            <button
-              class="swiper-button-next swiper-offer-button-next w-[50px] h-[50px] inline-flex bg-white rounded-[100px] shadow justify-center items-center"
-            ></button>
-          </div>
-          <div class="swiper-wrapper">
-            <img
-              src="./img/product/1.png"
-              alt="1"
-              class="swiper-slide object-cover"
-            />
-            <img
-              src="./img/product/2.png"
-              alt="2"
-              class="swiper-slide object-cover"
-            />
-            <img
-              src="./img/product/3.png"
-              alt="3"
-              class="swiper-slide object-cover"
-            />
+          <div class="flex items-center justify-between gap-10">
+            <div class="max-w-[850px] w-full h-[1px] bg-red-600"></div>
+            <button class="result_btn">Показать результат</button>
           </div>
         </div>
-        <div class="flex flex-col items-start max-w-[574px]">
-          <h2 class="title">ПВВГНГ(А)-LS, ПВБШВНГ(А)-LS</h2>
-          <span class="category mb-11">Кабели для солнечных систем</span>
-          <button
-            id="popup_btn"
-            class="download_btn w-[228px] h-[47px] mb-[47px]"
-          >
-            Заказать продукцию
-          </button>
-          <div
-            class="sub flex flex-col items-start justify-start gap-[17px] mb-7"
-          >
-            <h6 class="title">Краткое описание</h6>
-            <p class="description">
-              Предназначены для передачи и распределения электрической энергии в
-              стационарных установках, для прокладки в кабельных сооружениях,
-              помещениях и в сооружениях метрополитена, в том числе в
-              пожароопасных и взрывоопасных зонах.
+      </div>
+      <!-- result of search  -->
+      <div class="pt-12 pb-32 max-md:bg-neutral-100">
+        <div class="max-w-[1210px] mx-auto max-md:max-w-[380px]">
+          <div class="flex items-center justify-between mb-[56px]">
+            <h3 class="result">Результат поиска</h3>
+            <img src="./img/icons/burger.svg" alt="burger" />
+          </div>
+          <!-- <div class="flex flex-col items-center justify-center">
+            <img
+              src="./img/constructor/cry_error.svg"
+              alt="Not Found"
+              class="mb-11"
+            />
+            <p class="not_found_sub max-w-[962px] mb-[43px]">
+              Продукции с такими характеристиками нет, возможно вы ошиблись.
+              <br />
+              Попробуйте указать другие данные или напишите (позвоните) нам, и мы
+              постараемся предложить Вам альтернативный вариант.
             </p>
-          </div>
-          <a href="" class="download_spec flex items-center gap-[5px]"
-            >Скачать спецификацию
-            <svg
-              width="28"
-              height="27"
-              viewBox="0 0 28 27"
-              fill="#fff"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_310_947)">
-                <path
-                  d="M8.34125 14.625H6.125V21.375H7.25V19.125H8.34125C9.59 19.125 10.6025 18.09 10.6025 16.8525C10.6025 15.615 9.59 14.625 8.34125 14.625ZM8.34125 18H7.25V15.75H8.34125C8.97125 15.75 9.4775 16.245 9.4775 16.8525C9.4775 17.46 8.96 18 8.34125 18ZM14 14.625C13.9325 14.625 11.75 14.625 11.75 14.625V21.375C11.75 21.375 13.9325 21.375 14 21.375C15.2488 21.375 16.25 20.3738 16.25 19.1475V16.8638C16.25 15.6375 15.2488 14.6363 14 14.6363V14.625ZM15.125 19.1475C15.125 19.7437 14.6413 20.2275 14.045 20.25H12.875V15.75H14.045C14.6413 15.7725 15.125 16.2675 15.125 16.8525V19.1362V19.1475ZM17.375 14.625H21.875V15.75H18.5V18H20.75V19.125H18.5V21.375H17.375V14.625ZM17.0488 0H5.5625C4.01 0 2.75 1.26 2.75 2.8125V27H25.25V8.20125L17.0488 0ZM17.375 1.92375L23.3263 7.875H17.375V1.92375ZM3.875 25.875V2.8125C3.875 1.87875 4.62875 1.125 5.5625 1.125H16.25V9H24.125V25.875H3.875Z"
-                  fill="#E31E24"
+            <div class="nf_phone flex items-center justify-start gap-2 mb-[70px]">
+              <a
+                href="tel:+998 (55) 506 54 44"
+                class="transition-all duration-300 text-red-600"
+                >+998 (55) 506 54 44
+              </a>
+              |
+              <a
+                href="tel:+998 (71) 257 60 00"
+                class="transition-all duration-300 text-red-600"
+                >+998 (71) 257 60 00</a
+              >
+              |
+              <a
+                href="tel:+998 (71) 257 60 00"
+                class="transition-all duration-300 text-red-600"
+                >+998 (98) 126 04 44</a
+              >
+            </div>
+            <div class="flex flex-col items-center gap-[13px] cursor-pointer">
+              <div
+                class="bg-zinc-100 rounded-full pt-[33px] pr-[32px] pb-[32px] pl-[33px]"
+              >
+                <img
+                  src="./img/constructor/envelopes.svg"
+                  alt="icon"
+                  class="quession_icon"
                 />
-              </g>
-              <defs>
-                <clipPath id="clip0_310_947">
-                  <rect
-                    width="27"
-                    height="27"
-                    fill="white"
-                    transform="translate(0.5)"
-                  />
-                </clipPath>
-              </defs>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </main>
-    <div class="w-full bg-neutral-100">
-      <div
-        class="relative max-w-[1210px] mx-auto flex flex-col items-start pt-[60px] pb-[133px] max-md:max-w-[380px] max-[400px]:max-w-[320px] max-xl:px-[10px]"
-      >
-        <div class="tabs_btn mb-[47px]">
-          <button class="tab_1 active">Описание</button>
-          <button class="tab_2">Конструкция</button>
-        </div>
-        <div class="tabs relative mb-[80px]">
-          <div
-            id="tab_description"
-            class="w-full flex flex-col items-start justify-start active"
-          >
-            <h5 class="title mb-[30px]">
-              Радиоуправляемая машинка Turbine Storm White CL24B04-1
-            </h5>
-            <p class="sub !font-light mb-[30px]">
-              Игрушка способная полностью увлечь ребенка — радиоуправляемый
-              перевертыш-трансформер с функцией дрифта Storm. Может вращаться на
-              месте, а также двигаться вправо и влево. Как и прочие модели
-              радиоуправляемых перевертышей оснащен большим количеством
-              разнообразных функций. Колеса машинки меняют свое положение при
-              нажатии кнопки на пульте. Отличное качество, благодаря работе на
-              частоте 2.4 GHz не пересекается с другими игрушками. Яркая
-              расцветка и стильный дизайн Работает от батареек(в комплект не
-              входят).
-            </p>
-            <h5 class="title mb-[52px]">Технические характеристики</h5>
-            <table class="overflow-x-auto">
-              <tr>
-                <td>Номинальное напряжение, кв</td>
-                <td>6</td>
-              </tr>
-              <tr>
-                <td>
-                  Температура окружающей среды при эксплуатации кабеля, °С
-                </td>
-                <td>OT-50 до +50</td>
-              </tr>
-              <tr>
-                <td>
-                  Стойкий при относительной влажности воздуха до 98% при
-                  температуре окружающей среды. "С, до
-                </td>
-                <td>+35</td>
-              </tr>
-              <tr>
-                <td>Минимальный радиус изгиба, диаметров кабеля</td>
-                <td>12</td>
-              </tr>
-              <tr>
-                <td>Срок службы кабелей, лет, не менее</td>
-                <td>30</td>
-              </tr>
-              <tr>
-                <td>Дымообразование в испытательной камере</td>
-                <td>не более 50 %</td>
-              </tr>
-              <tr>
-                <td>
-                  Категория нераспространения горения при групповой прокладке
-                </td>
-                <td>А</td>
-              </tr>
-              <tr>
-                <td>Эквивалентный показатель токсичности, г/м3. более</td>
-                <td>40</td>
-              </tr>
-            </table>
-          </div>
-          <div
-            id="tab_constructor"
-            class="w-full flex flex-col items-start justify-start"
-          >
-            <h5 class="title mb-[30px]">Конструктор</h5>
-          </div>
-        </div>
-        <div
-          class="recomendations flex flex-col items-start justify-start gap-[33px] w-full"
-        >
-          <h2 class="title">Рекомендации</h2>
-          <button
-            class="swiper-button-prev recomendation-slider-btn-prev -left-16 max-xl:-left-[8px]"
-          ></button>
-          <button
-            class="swiper-button-next recomendation-slider-btn-next -right-16 max-xl:-right-[8px]"
-          ></button>
-          <div class="recomendation-slider w-full swiper overflow-x-hidden">
+              </div>
+              <span
+                class="text-center text-zinc-700 text-[17px] font-semibold leading-[30px]"
+                >Оставить заявку</span
+              >
+            </div>
+          </div> -->
+          <!-- result of cards  -->
+          <div class="cards">
             <div
-              class="swiper-wrapper max-w-[1210px] flex items-stretch max-md:max-w-[380px] max-[400px]:max-w-[320px]"
+              class="card relative cursor-pointer flex flex-col bg-white rounded-[20px] pb-[22px] pt-[30px]"
             >
-              <a href="" class="swiper-slide card">
-                <div
-                  class="flex absolute top-[14px] right-[11px] items-center gap-[5px]"
-                >
-                  <img
-                    src="./img/catalog_page/note_!.svg"
-                    alt="!"
-                    class="max-md:hidden"
-                  />
+              <div
+                class="absolute top-[14px] right-[11px] flex items-center gap-[5px] z-[2]"
+              >
+                <a href="" class="card-link">
+                  <img src="./img/catalog_page/note_!.svg" alt="!" />
+                </a>
+                <a href="">
                   <img
                     src="./img/catalog_page/note_download.svg"
-                    alt="download"
-                    class="max-md:hidden"
+                    alt="download note"
                   />
-                </div>
+                </a>
+              </div>
+              <div class="flex flex-col items-start justify-start gap-7">
                 <img
                   src="./img/catalog_page/cards/1.png"
                   alt="ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв"
+                  class="object-cover w-full rounded-2xl"
                 />
-                <p>ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв</p>
-              </a>
-              <a href="" class="swiper-slide card">
-                <div
-                  class="flex absolute top-[14px] right-[11px] items-center gap-[5px]"
-                >
-                  <img
-                    src="./img/catalog_page/note_!.svg"
-                    alt="!"
-                    class="max-md:hidden"
-                  />
+                <p class="card_description">
+                  ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв
+                </p>
+              </div>
+            </div>
+            <div
+              class="card relative cursor-pointer flex flex-col bg-white rounded-[20px] pb-[22px] pt-[30px]"
+            >
+              <div
+                class="absolute top-[14px] right-[11px] flex items-center gap-[5px] z-[2]"
+              >
+                <a href="" class="card-link">
+                  <img src="./img/catalog_page/note_!.svg" alt="!" />
+                </a>
+                <a href="">
                   <img
                     src="./img/catalog_page/note_download.svg"
-                    alt="download"
-                    class="max-md:hidden"
+                    alt="download note"
                   />
-                </div>
+                </a>
+              </div>
+              <div class="flex flex-col items-start justify-start gap-7">
                 <img
                   src="./img/catalog_page/cards/2.png"
                   alt="ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв"
+                  class="object-cover w-full rounded-2xl"
                 />
-                <p>ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв</p>
-              </a>
-              <a href="" class="swiper-slide card">
-                <div
-                  class="flex absolute top-[14px] right-[11px] items-center gap-[5px]"
-                >
-                  <img
-                    src="./img/catalog_page/note_!.svg"
-                    alt="!"
-                    class="max-md:hidden"
-                  />
+                <p class="card_description">
+                  ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв
+                </p>
+              </div>
+            </div>
+            <div
+              class="card relative cursor-pointer flex flex-col bg-white rounded-[20px] pb-[22px] pt-[30px]"
+            >
+              <div
+                class="absolute top-[14px] right-[11px] flex items-center gap-[5px] z-[2]"
+              >
+                <a href="" class="card-link">
+                  <img src="./img/catalog_page/note_!.svg" alt="!" />
+                </a>
+                <a href="">
                   <img
                     src="./img/catalog_page/note_download.svg"
-                    class="max-md:hidden"
-                    alt="download"
+                    alt="download note"
                   />
-                </div>
+                </a>
+              </div>
+              <div class="flex flex-col items-start justify-start gap-7">
                 <img
                   src="./img/catalog_page/cards/3.png"
                   alt="ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв"
+                  class="object-cover w-full rounded-2xl"
                 />
-                <p>ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв</p>
-              </a>
-              <a href="" class="swiper-slide card">
-                <div
-                  class="flex absolute top-[14px] right-[11px] items-center gap-[5px]"
-                >
-                  <img
-                    src="./img/catalog_page/note_!.svg"
-                    alt="!"
-                    class="max-md:hidden"
-                  />
+                <p class="card_description">
+                  ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв
+                </p>
+              </div>
+            </div>
+            <div
+              class="card relative cursor-pointer flex flex-col bg-white rounded-[20px] pb-[22px] pt-[30px]"
+            >
+              <div
+                class="absolute top-[14px] right-[11px] flex items-center gap-[5px] z-[2]"
+              >
+                <a href="" class="card-link">
+                  <img src="./img/catalog_page/note_!.svg" alt="!" />
+                </a>
+                <a href="">
                   <img
                     src="./img/catalog_page/note_download.svg"
-                    class="max-md:hidden"
-                    alt="download"
+                    alt="download note"
                   />
-                </div>
+                </a>
+              </div>
+              <div class="flex flex-col items-start justify-start gap-7">
                 <img
                   src="./img/catalog_page/cards/4.png"
                   alt="ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв"
+                  class="object-cover w-full rounded-2xl"
                 />
-                <p>ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв</p>
-              </a>
-              <a href="" class="swiper-slide card">
-                <div
-                  class="flex absolute top-[14px] right-[11px] items-center gap-[5px]"
-                >
-                  <img
-                    src="./img/catalog_page/note_!.svg"
-                    alt="!"
-                    class="max-md:hidden"
-                  />
+                <p class="card_description">
+                  ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв
+                </p>
+              </div>
+            </div>
+            <div
+              class="card relative cursor-pointer flex flex-col bg-white rounded-[20px] pb-[22px] pt-[30px]"
+            >
+              <div
+                class="absolute top-[14px] right-[11px] flex items-center gap-[5px] z-[2]"
+              >
+                <a href="" class="card-link">
+                  <img src="./img/catalog_page/note_!.svg" alt="!" />
+                </a>
+                <a href="">
                   <img
                     src="./img/catalog_page/note_download.svg"
-                    class="max-md:hidden"
-                    alt="download"
+                    alt="download note"
                   />
-                </div>
+                </a>
+              </div>
+              <div class="flex flex-col items-start justify-start gap-7">
                 <img
                   src="./img/catalog_page/cards/5.png"
                   alt="ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв"
+                  class="object-cover w-full rounded-2xl"
                 />
-                <p>ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв</p>
-              </a>
-              <a href="" class="swiper-slide card">
-                <div
-                  class="flex absolute top-[14px] right-[11px] items-center gap-[5px]"
-                >
-                  <img
-                    src="./img/catalog_page/note_!.svg"
-                    alt="!"
-                    class="max-md:hidden"
-                  />
+                <p class="card_description">
+                  ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв
+                </p>
+              </div>
+            </div>
+            <div
+              class="card relative cursor-pointer flex flex-col bg-white rounded-[20px] pb-[22px] pt-[30px]"
+            >
+              <div
+                class="absolute top-[14px] right-[11px] flex items-center gap-[5px] z-[2]"
+              >
+                <a href="" class="card-link">
+                  <img src="./img/catalog_page/note_!.svg" alt="!" />
+                </a>
+                <a href="">
                   <img
                     src="./img/catalog_page/note_download.svg"
-                    class="max-md:hidden"
-                    alt="download"
+                    alt="download note"
                   />
-                </div>
-                <img
-                  src="./img/catalog_page/cards/1.png"
-                  alt="ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв"
-                />
-                <p>ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв</p>
-              </a>
-              <a href="" class="swiper-slide card">
-                <div
-                  class="flex absolute top-[14px] right-[11px] items-center gap-[5px]"
-                >
-                  <img
-                    src="./img/catalog_page/note_!.svg"
-                    alt="!"
-                    class="max-md:hidden"
-                  />
-                  <img
-                    src="./img/catalog_page/note_download.svg"
-                    class="max-md:hidden"
-                    alt="download"
-                  />
-                </div>
+                </a>
+              </div>
+              <div class="flex flex-col items-start justify-start gap-7">
                 <img
                   src="./img/catalog_page/cards/2.png"
                   alt="ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв"
+                  class="object-cover w-full rounded-2xl"
                 />
-                <p>ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв</p>
-              </a>
+                <p class="card_description">
+                  ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв
+                </p>
+              </div>
+            </div>
+            <div
+              class="card relative cursor-pointer flex flex-col bg-white rounded-[20px] pb-[22px] pt-[30px]"
+            >
+              <div
+                class="absolute top-[14px] right-[11px] flex items-center gap-[5px] z-[2]"
+              >
+                <a href="" class="card-link">
+                  <img src="./img/catalog_page/note_!.svg" alt="!" />
+                </a>
+                <a href="">
+                  <img
+                    src="./img/catalog_page/note_download.svg"
+                    alt="download note"
+                  />
+                </a>
+              </div>
+              <div class="flex flex-col items-start justify-start gap-7">
+                <img
+                  src="./img/catalog_page/cards/3.png"
+                  alt="ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв"
+                  class="object-cover w-full rounded-2xl"
+                />
+                <p class="card_description">
+                  ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв
+                </p>
+              </div>
+            </div>
+            <div
+              class="card relative cursor-pointer flex flex-col bg-white rounded-[20px] pb-[22px] pt-[30px]"
+            >
+              <div
+                class="absolute top-[14px] right-[11px] flex items-center gap-[5px] z-[2]"
+              >
+                <a href="" class="card-link">
+                  <img src="./img/catalog_page/note_!.svg" alt="!" />
+                </a>
+                <a href="">
+                  <img
+                    src="./img/catalog_page/note_download.svg"
+                    alt="download note"
+                  />
+                </a>
+              </div>
+              <div class="flex flex-col items-start justify-start gap-7">
+                <img
+                  src="./img/catalog_page/cards/5.png"
+                  alt="ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв"
+                  class="object-cover w-full rounded-2xl"
+                />
+                <p class="card_description">
+                  ВВГ, АВВГ, ВВГЭ, АВВГЭ, ВБбШв, АВБбШв
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
     <!-- footer  -->
     <footer
       class="footer w-[100vw] pt-[77px] pb-20 bg-gray-200 max-[400px]:px-[10px] max-xl:px-[10px]"
@@ -1278,8 +1646,7 @@
         >
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts/index.js"></script>
-    <script src="./scripts/product.js"></script>
+    <script src="./scripts/constructor.js"></script>
   </body>
 </html>

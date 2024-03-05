@@ -5,7 +5,7 @@ window.addEventListener("resize", function () {
   swiperMain.update();
 });
 let swiperMain = new Swiper(".offer-slider", {
-  speed: 600,
+  speed: 400,
   simulateTouch: adaptLoop,
   slidesPerView: 1,
   initialSlide: 0,
@@ -26,7 +26,7 @@ let swiperText = new Swiper(".text-slider", {
     nextEl: ".slide-text-next",
     prevEl: ".slide-text-prev",
   },
-  speed: 600,
+  speed: 400,
   simulateTouch: adaptLoop,
   slidesPerView: 1,
   initialSlide: 0,
@@ -44,7 +44,7 @@ let swiperText = new Swiper(".text-slider", {
 });
 
 let swiperImg = new Swiper(".img-slider", {
-  speed: 600,
+  speed: 400,
   simulateTouch: adaptLoop,
   slidesPerView: 1,
   initialSlide: 0,

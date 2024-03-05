@@ -21,7 +21,13 @@ let swiperProduct = new Swiper(".products_offer", {
 });
 let adaptiveSlider = window.innerWidth < 768 ? 2 : 4;
 let adaptSpaces = window.innerWidth < 768 ? 15 : 45;
-
+window.addEventListener("resize", function () {
+  adaptiveSlider = window.innerWidth < 768 ? 2 : 4;
+  adaptSpaces = window.innerHeight < 768 ? 15 : 45;
+  swiperRecomendation.params.slidesPerView = adaptiveSlider;
+  swiperRecomendation.params.spaceBetween = adaptSpaces;
+  swiperRecomendation.update();
+});
 let swiperRecomendation = new Swiper(".recomendation-slider", {
   navigation: {
     nextEl: ".recomendation-slider-btn-next",
