@@ -191,10 +191,10 @@ function cardGenerate(card) {
     <div
       class="absolute top-[14px] right-[11px] flex items-center gap-[5px] z-[2]"
     >
-      <a href="${card.href}" class="card-link">
+      <a href="${card.href}" class="card-link max-md:hidden">
         <img src="./img/catalog_page/note_!.svg" alt="!" />
       </a>
-      <a href="">
+      <a href="" class="max-md:hidden">
         <img
           src="./img/catalog_page/note_download.svg"
           alt="download note"

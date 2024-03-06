@@ -15,7 +15,33 @@ searchIcon.addEventListener("click", function () {
   searchInput.focus();
 });
 
-const dropDowns = document.querySelectorAll(".constructor_down");
+const dropDowns = Array.from(document.querySelectorAll(".constructor_down"));
+
+document.addEventListener("click", (e) => {
+  const isOutsideDropDowns = !dropDowns.some((dropDown) =>
+    dropDown.contains(e.target)
+  );
+
+  if (isOutsideDropDowns) {
+    console.log("outside");
+    dropDowns.forEach((el) => {
+      const optionsContainerClose = el.querySelector(".options");
+      const dropDownClose = el.querySelector(".drop_down");
+      const iconDownClose = dropDownClose.querySelector(".arrow_down");
+      const currentOption = dropDownClose.querySelector(".current_option");
+      if (currentOption.textContent.trim() !== "Выберите вариант") {
+        optionsContainerClose.classList.remove("active");
+        iconDownClose.classList.remove("active");
+      } else {
+        dropDownClose.classList.remove("active");
+        optionsContainerClose.classList.remove("active");
+        iconDownClose.classList.remove("active");
+        iconDownClose.classList.remove("active_color");
+      }
+    });
+  }
+});
+
 dropDowns.forEach((el) => {
   let isChanged = false;
   const dropDown = el.querySelector(".drop_down");
