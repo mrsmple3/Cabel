@@ -225,3 +225,26 @@ function GenerateCards(categoryListName, Categories) {
   }
   addCardClickHandler();
 }
+const previousPagi = document.querySelector(".previous_pagination");
+const nextPagi = document.querySelector(".next_pagination");
+const countPagi = document.querySelectorAll(".count .pagination_item");
+
+countPagi[0].classList.add("active");
+
+if (countPagi[0].classList.contains("active")) {
+  previousPagi.classList.add("noactive");
+}
+if (countPagi[countPagi.length - 1].classList.contains("active")) {
+  nextPagi.classList.add("noactive");
+}
+previousPagi.addEventListener("click", function (event) {
+  if (this.classList.contains("noactive")) {
+    event.preventDefault(); // Предотвращаем переход по ссылке при активации класса "noactive"
+  }
+});
+
+nextPagi.addEventListener("click", function (event) {
+  if (this.classList.contains("noactive")) {
+    event.preventDefault(); // Предотвращаем переход по ссылке при активации класса "noactive"
+  }
+});
