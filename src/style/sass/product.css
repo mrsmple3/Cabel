@@ -1,4 +1,8 @@
 body {
+  transition: all 0.3s;
+}
+
+body {
   font-size: 15px;
   font-family: "PF Encore Sans Pro", sans-serif;
   font-weight: 600;
@@ -189,6 +193,11 @@ header .group path {
 }
 header .group:hover svg path {
   fill: #e31e24;
+}
+@media screen and (max-width: 768px) {
+  header .group {
+    margin-left: -5px;
+  }
 }
 header #search_block {
   transition: all 0.3s;
@@ -389,6 +398,7 @@ body {
   height: 45px;
   background: #e31e24;
   border-radius: 100%;
+  top: var(--swiper-navigation-top-offset, 59%);
 }
 .recomendations .recomendation-slider-btn-prev::after,
 .recomendations .recomendation-slider-btn-next::after {

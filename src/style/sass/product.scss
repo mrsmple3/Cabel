@@ -156,6 +156,7 @@ body {
     height: 45px;
     background: $red;
     border-radius: 100%;
+    top: var(--swiper-navigation-top-offset, 59%);
     &::after {
       color: #fff;
       font-size: 14px;

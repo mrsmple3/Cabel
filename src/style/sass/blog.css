@@ -1,4 +1,8 @@
 body {
+  transition: all 0.3s;
+}
+
+body {
   font-size: 15px;
   font-family: "PF Encore Sans Pro", sans-serif;
   font-weight: 600;
@@ -190,6 +194,11 @@ header .group path {
 header .group:hover svg path {
   fill: #e31e24;
 }
+@media screen and (max-width: 768px) {
+  header .group {
+    margin-left: -5px;
+  }
+}
 header #search_block {
   transition: all 0.3s;
 }
@@ -228,6 +237,11 @@ header #search_block.top-0 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 42px;
+}
+@media screen and (max-width: 1200px) {
+  .blog .news {
+    gap: 20px;
+  }
 }
 @media screen and (max-width: 768px) {
   .blog .news {

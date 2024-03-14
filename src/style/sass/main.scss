@@ -10,7 +10,7 @@
     @media screen and (max-width: 900px) {
       h1 {
         font-size: 34px;
-        line-height: 2.6rem;
+        line-height: 2.4rem;
       }
     }
     .swiper-wrapper {
@@ -197,13 +197,22 @@ line {
 }
 .sixth {
   .news {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    display: flex;
+    align-items: start;
     gap: 42px;
+    @media screen and (max-width: 1200px) {
+      gap: 20px;
+    }
     @media screen and (max-width: 768px) {
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+    img {
+      height: 167px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
     }
   }
 }

@@ -47,12 +47,12 @@
                   class="submenu menu-submenu_catalog flex flex-col items-start px-[25px] py-[26px] text-[23px] font-light leading-[29px]"
                 >
                   <a
-                    href=""
+                    href="./catalog.html"
                     class="transition-all duration-300 hover:text-red-600"
                     >Полный каталог продукции</a
                   >
                   <a
-                    href=""
+                    href="./constructor.html"
                     class="transition-all duration-300 hover:text-red-600"
                     >Конструктор</a
                   >
@@ -165,7 +165,7 @@
                   </a>
                 </div>
               </li>
-              <li>Новости</li>
+              <li><a href="./blog.html">Новости</a></li>
               <li>Персонал</li>
               <li
                 class="langs flex items-center justify-start gap-3 text-[23px]"
@@ -490,9 +490,11 @@
           </a>
           <nav class="nav_list max-lg:hidden">
             <ul class="navbar flex items-center gap-5 text-[#2F2F2F]">
-              <li class="hover:text-red-600">Главная</li>
+              <li class="hover:text-red-600"><a href="">Главная</a></li>
               <li id="catalog" class="catalog relative">
-                <span class="text-nowrap hover:text-red-600">Каталог</span>
+                <span class="text-nowrap hover:text-red-600"
+                  ><a href="">Каталог</a></span
+                >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="20"
@@ -506,12 +508,12 @@
                   class="submenu submenu_catalog w-[315px] max-w-[320px] absolute top-10 -left-[111px] flex flex-col items-start px-[25px] py-[26px] rounded-[20px] shadow bg-white text-lg font-light leading-[29px] z-[3]"
                 >
                   <a
-                    href=""
+                    href="./catalog.html"
                     class="transition-all duration-300 hover:text-red-600"
                     >Полный каталог продукции</a
                   >
                   <a
-                    href=""
+                    href="./constructor.html"
                     class="transition-all duration-300 hover:text-red-600"
                     >Конструктор</a
                   >
@@ -619,8 +621,10 @@
                   </a>
                 </div>
               </li>
-              <li class="hover:text-red-600">Новости</li>
-              <li class="hover:text-red-600">Персонал</li>
+              <li class="hover:text-red-600">
+                <a href="./blog.html">Новости</a>
+              </li>
+              <li class="hover:text-red-600"><a href="">Персонал</a></li>
             </ul>
           </nav>
           <div class="flex items-center gap-4 relative">
@@ -762,7 +766,7 @@
           </ul>
           <div
             id="mobile_categories"
-            class="select_dropdown md:hidden relative"
+            class="select_dropdown md:hidden relative cursor-pointer"
           >
             <span class="current_option"></span>
             <svg
@@ -780,7 +784,7 @@
             </svg>
 
             <ul
-              class="options absolute left-0 top-[100%] w-full h-[350px] overflow-y-auto"
+              class="options absolute left-0 top-[115%] w-full h-[350px] overflow-y-auto"
             ></ul>
           </div>
           <a
@@ -856,7 +860,7 @@
     </main>
     <!-- footer  -->
     <footer
-      class="footer w-[100vw] pt-[77px] pb-20 bg-gray-200 max-[400px]:px-[10px] max-xl:px-[10px]"
+      class="footer w-[100vw] pt-[77px] pb-20 bg-[#EDEDED] max-[400px]:px-[10px] max-xl:px-[10px]"
     >
       <div
         class="max-w-[1210px] mx-auto flex items-stretch justify-between flex-wrap gap-10 max-md:items-start max-md:max-w-[380px]"
@@ -875,7 +879,7 @@
               <li><a href="">О компании</a></li>
               <li><a href="">Референс-лист</a>Референс-лист</li>
               <li><a href="">ProCab Content</a></li>
-              <li><a href="">Новости</a></li>
+              <li><a href="./blog.html">Новости</a></li>
               <li><a href="">Персонал</a></li>
               <li><a href="">Конструктор</a></li>
               <li><a href="">Калькулятор</a></li>

@@ -51,12 +51,12 @@
                   class="submenu menu-submenu_catalog flex flex-col items-start px-[25px] py-[26px] text-[23px] font-light leading-[29px]"
                 >
                   <a
-                    href=""
+                    href="./catalog.html"
                     class="transition-all duration-300 hover:text-red-600"
                     >Полный каталог продукции</a
                   >
                   <a
-                    href=""
+                    href="./constructor.html"
                     class="transition-all duration-300 hover:text-red-600"
                     >Конструктор</a
                   >
@@ -169,7 +169,7 @@
                   </a>
                 </div>
               </li>
-              <li>Новости</li>
+              <li><a href="./blog.html">Новости</a></li>
               <li>Персонал</li>
               <li
                 class="langs flex items-center justify-start gap-3 text-[23px]"
@@ -494,9 +494,11 @@
           </a>
           <nav class="nav_list max-lg:hidden">
             <ul class="navbar flex items-center gap-5 text-[#2F2F2F]">
-              <li class="hover:text-red-600">Главная</li>
+              <li class="hover:text-red-600"><a href="">Главная</a></li>
               <li id="catalog" class="catalog relative">
-                <span class="text-nowrap hover:text-red-600">Каталог</span>
+                <span class="text-nowrap hover:text-red-600"
+                  ><a href="">Каталог</a></span
+                >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="20"
@@ -510,12 +512,12 @@
                   class="submenu submenu_catalog w-[315px] max-w-[320px] absolute top-10 -left-[111px] flex flex-col items-start px-[25px] py-[26px] rounded-[20px] shadow bg-white text-lg font-light leading-[29px] z-[3]"
                 >
                   <a
-                    href=""
+                    href="./catalog.html"
                     class="transition-all duration-300 hover:text-red-600"
                     >Полный каталог продукции</a
                   >
                   <a
-                    href=""
+                    href="./constructor.html"
                     class="transition-all duration-300 hover:text-red-600"
                     >Конструктор</a
                   >
@@ -623,8 +625,10 @@
                   </a>
                 </div>
               </li>
-              <li class="hover:text-red-600">Новости</li>
-              <li class="hover:text-red-600">Персонал</li>
+              <li class="hover:text-red-600">
+                <a href="./blog.html">Новости</a>
+              </li>
+              <li class="hover:text-red-600"><a href="">Персонал</a></li>
             </ul>
           </nav>
           <div class="flex items-center gap-4 relative">
@@ -643,14 +647,14 @@
                 />
               </svg>
             </div>
-            <a
+            <button
               href=""
               class="contacts_btn text-white contacts_btn px-[30px] py-3 transition-colors duration-300 bg-red-600 hover:text-red-600 hover:bg-white hover:border hover:border-red-600 border border-white rounded-tl-[30px] rounded-br-[30px] inline-flex justify-center items-center gap-2.5 max-xl:hidden"
             >
               <span class="text-xl font-light tracking-[1.2px] leading-tight"
                 >Контакты</span
               >
-            </a>
+            </button>
             <div class="h-10 w-12 py-[6.83px] lg:hidden"></div>
             <a
               href="#header"
@@ -668,6 +672,7 @@
         </div>
       </div>
     </header>
+    <!-- main -->
     <main
       class="product first max-w-[1210px] mx-auto flex flex-col items-start mb-[65px] overflow-x-hidden max-md:max-w-[380px] max-md:mt-[83px] max-xl:px-[10px]"
     >
@@ -705,9 +710,9 @@
               Отправляя данную форму, вы соглашаетесь на обработку персональных
               данных.
             </p>
-            <div class="phone flex items-center gap-1">
-              <a href="tel: +998 (55) 506 54 44">+998 (55) 506 54 44 </a>
-              | <a href="tel: +998 (71) 257 60 00">+998 (71) 257 60 00</a> |
+            <div class="phone flex items-center gap-1 max-md:flex-wrap">
+              <a href="tel: +998 (55) 506 54 44">+998 (55) 506 54 44 </a> |
+              <a href="tel: +998 (71) 257 60 00">+998 (71) 257 60 00</a> |
               <a href="tel: +998 (98) 126 04 44">+998 (98) 126 04 44</a>
             </div>
           </div>
@@ -1049,7 +1054,7 @@
     </div>
     <!-- footer  -->
     <footer
-      class="footer w-[100vw] pt-[77px] pb-20 bg-gray-200 max-[400px]:px-[10px] max-xl:px-[10px]"
+      class="footer w-[100vw] pt-[77px] pb-20 bg-[#EDEDED] max-[400px]:px-[10px] max-xl:px-[10px]"
     >
       <div
         class="max-w-[1210px] mx-auto flex items-stretch justify-between flex-wrap gap-10 max-md:items-start max-md:max-w-[380px]"
@@ -1068,7 +1073,7 @@
               <li><a href="">О компании</a></li>
               <li><a href="">Референс-лист</a>Референс-лист</li>
               <li><a href="">ProCab Content</a></li>
-              <li><a href="">Новости</a></li>
+              <li><a href="./blog.html">Новости</a></li>
               <li><a href="">Персонал</a></li>
               <li><a href="">Конструктор</a></li>
               <li><a href="">Калькулятор</a></li>

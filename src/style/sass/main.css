@@ -12,7 +12,7 @@
 @media screen and (max-width: 900px) {
   .first .offer h1 {
     font-size: 34px;
-    line-height: 2.6rem;
+    line-height: 2.4rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -188,9 +188,14 @@ line {
 }
 
 .sixth .news {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  display: flex;
+  align-items: start;
   gap: 42px;
+}
+@media screen and (max-width: 1200px) {
+  .sixth .news {
+    gap: 20px;
+  }
 }
 @media screen and (max-width: 768px) {
   .sixth .news {
@@ -198,4 +203,12 @@ line {
     flex-direction: column;
     align-items: center;
   }
+}
+.sixth .news img {
+  height: 167px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */
