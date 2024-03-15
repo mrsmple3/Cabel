@@ -692,6 +692,10 @@ video {
   top: 85px;
 }
 
+.top-\[90px\] {
+  top: 90px;
+}
+
 .-z-\[1\] {
   z-index: -1;
 }
@@ -778,6 +782,10 @@ video {
   margin-bottom: 10px;
 }
 
+.mb-\[116px\] {
+  margin-bottom: 116px;
+}
+
 .mb-\[117px\] {
   margin-bottom: 117px;
 }
@@ -786,12 +794,20 @@ video {
   margin-bottom: 120px;
 }
 
+.mb-\[142px\] {
+  margin-bottom: 142px;
+}
+
 .mb-\[18px\] {
   margin-bottom: 18px;
 }
 
 .mb-\[206px\] {
   margin-bottom: 206px;
+}
+
+.mb-\[230px\] {
+  margin-bottom: 230px;
 }
 
 .mb-\[25px\] {
@@ -808,6 +824,10 @@ video {
 
 .mb-\[33px\] {
   margin-bottom: 33px;
+}
+
+.mb-\[34px\] {
+  margin-bottom: 34px;
 }
 
 .mb-\[35px\] {
@@ -842,8 +862,16 @@ video {
   margin-bottom: 50px;
 }
 
+.mb-\[51px\] {
+  margin-bottom: 51px;
+}
+
 .mb-\[52px\] {
   margin-bottom: 52px;
+}
+
+.mb-\[54px\] {
+  margin-bottom: 54px;
 }
 
 .mb-\[55px\] {
@@ -856,6 +884,10 @@ video {
 
 .mb-\[58px\] {
   margin-bottom: 58px;
+}
+
+.mb-\[60px\] {
+  margin-bottom: 60px;
 }
 
 .mb-\[62px\] {
@@ -902,12 +934,44 @@ video {
   margin-bottom: 92px;
 }
 
+.mb-\[95px\] {
+  margin-bottom: 95px;
+}
+
 .mb-\[97px\] {
   margin-bottom: 97px;
 }
 
 .mr-6 {
   margin-right: 1.5rem;
+}
+
+.mb-\[\] {
+  margin-bottom: ;
+}
+
+.mb-\[28px\] {
+  margin-bottom: 28px;
+}
+
+.-mb-\[10px\] {
+  margin-bottom: -10px;
+}
+
+.-mb-\[1px\] {
+  margin-bottom: -1px;
+}
+
+.-mb-\[15px\] {
+  margin-bottom: -15px;
+}
+
+.mb-\[20px\] {
+  margin-bottom: 20px;
+}
+
+.mb-\[15px\] {
+  margin-bottom: 15px;
 }
 
 .block {
@@ -1090,6 +1154,10 @@ video {
   width: 46px;
 }
 
+.w-\[47px\] {
+  width: 47px;
+}
+
 .w-\[50px\] {
   width: 50px;
 }
@@ -1176,6 +1244,10 @@ video {
 
 .max-w-\[450px\] {
   max-width: 450px;
+}
+
+.max-w-\[452px\] {
+  max-width: 452px;
 }
 
 .max-w-\[555px\] {
@@ -1414,6 +1486,18 @@ video {
 
 .gap-\[8\.54px\] {
   gap: 8.54px;
+}
+
+.gap-\[\] {
+  gap: ;
+}
+
+.gap-\[-\] {
+  gap: -;
+}
+
+.gap-\[5\] {
+  gap: 5;
 }
 
 .self-start {
@@ -2396,6 +2480,10 @@ video {
 
   .max-md\:mb-\[1px\] {
     margin-bottom: 1px;
+  }
+
+  .max-md\:mb-\[221px\] {
+    margin-bottom: 221px;
   }
 
   .max-md\:mb-\[30px\] {

@@ -43,7 +43,7 @@ body {
       }
     }
   }
-  a {
+  .dowland_btn {
     text-align: center;
     font-size: 18px;
     font-weight: 600;
@@ -85,11 +85,13 @@ body {
   gap: 17px;
   .card {
     flex: 1 1 calc(33.333% - 17px);
-    max-width: 290px;
-    min-width: 150px;
+    max-width: 32%;
     box-sizing: border-box;
     border-bottom: 4px solid #fff;
     transition: 0.3s;
+    .card-image {
+      max-height: 160px;
+    }
     &:hover {
       border-bottom: 4px solid #dc2626;
     }

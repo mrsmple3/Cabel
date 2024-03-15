@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./style/sass/canculator.css" />
+    <link rel="stylesheet" href="./style/sass/contacts.css" />
     <link rel="stylesheet" href="./style/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -686,87 +686,72 @@
     </header>
     <!-- main -->
     <main
-      class="canculator max-w-[1210px] mx-auto first w-full overflow-hidden max-md:max-w-[380px] max-md:mt-[83px] max-xl:px-[10px]"
+      class="contacts max-w-[1210px] mx-auto first w-full overflow-hidden max-md:max-w-[380px] max-md:mt-[83px] max-xl:px-[10px]"
     >
       <div class="references max-md:flex-wrap mb-[42px] max-md:mb-[32px]">
         <span>Главная</span>
         <img src="./img/icons/arrow_left_little.svg" alt=">" />
-        <span class="current_category">Калькулятор</span>
+        <span class="current_category">Контакты</span>
       </div>
-      <h2 class="mb-[51px]">Калькулятор</h2>
-      <div class="canculator_block mb-[116px]">
-        <div class="inputs">
-          <div class="input">
-            <label for="metre">Длина кабеля, м</label>
-            <input
-              id="metre"
-              type="number"
-              class="number_input"
-              oninput="this.value = Math.abs(this.value)"
-            />
-          </div>
-          <div class="input constructor_down relative">
-            <svg
-              width="15"
-              height="8"
-              viewBox="0 0 15 8"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="arrow_down absolute bottom-5 right-5"
-            >
-              <path
-                d="M7.54939 7.49817C7.08272 7.49817 6.64289 7.31617 6.31156 6.986L0.150391 0.824833L0.975224 0L7.13639 6.16117C7.35689 6.38167 7.74072 6.38167 7.96122 6.16117L14.1224 0L14.9472 0.824833L8.78606 6.986C8.45589 7.31617 8.01606 7.49817 7.54822 7.49817H7.54939Z"
-                fill="#5F5F5F"
-              />
-            </svg>
-            <label for="mark">Марка кабеля</label>
-            <div class="drop_down standart cursor-pointer">
-              <span class="current_option">Выберите вариант</span>
-              <ul
-                class="options w-full absolute left-0 top-[90px] h-[210px] overflow-y-auto"
-              >
-                <li class="option">Пункт 1</li>
-                <li class="option">Пункт 2</li>
-                <li class="option">Пункт 3</li>
-              </ul>
-            </div>
-          </div>
-          <div class="input constructor_down relative">
-            <svg
-              width="15"
-              height="8"
-              viewBox="0 0 15 8"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="arrow_down absolute bottom-5 right-5"
-            >
-              <path
-                d="M7.54939 7.49817C7.08272 7.49817 6.64289 7.31617 6.31156 6.986L0.150391 0.824833L0.975224 0L7.13639 6.16117C7.35689 6.38167 7.74072 6.38167 7.96122 6.16117L14.1224 0L14.9472 0.824833L8.78606 6.986C8.45589 7.31617 8.01606 7.49817 7.54822 7.49817H7.54939Z"
-                fill="#5F5F5F"
-              />
-            </svg>
-            <label for="mark">Тип Барабана</label>
-            <div class="drop_down standart cursor-pointer">
-              <span class="current_option">Выберите вариант</span>
-              <ul
-                class="options w-full absolute left-0 top-[90px] h-[210px] overflow-y-auto"
-              >
-                <li class="option">Пункт 1</li>
-                <li class="option">Пункт 2</li>
-                <li class="option">Пункт 3</li>
-              </ul>
-            </div>
-          </div>
+      <div class="max-w-[452px]">
+        <h2 class="mb-[34px]">Контакты</h2>
+        <h6 class="mb-[50px]">Главный офис</h6>
+        <div class="phones flex flex-col items-start gap-[10px] mb-[50px]">
+          <span>+998 55 506 54 44</span>
+          <span>+998 71 257 60 00</span>
+          <span>+998 98 126 04 44</span>
         </div>
-        <div
-          class="flex items-center justify-between flex-wrap gap-3 mb-[55px]"
-        >
-          <button class="raschitat">Рассчитать</button>
-          <button class="sbros">Рассчитать</button>
+        <div class="flex flex-col items-start mb-[55px]">
+          <span>E-mail: info@procab.uz</span>
+          <span>Адрес: г. Ташкент, Сергелийский район, ул. Файзли, дом 3</span>
         </div>
-        <span class="bottom_span"
-          >Источник: <span>Вес кабеля</span> на KALK.PRO</span
-        >
+        <div class="flex items-start justify-start gap-[10px] mb-[95px]">
+          <a href="youtube.com"
+            ><img src="./img/icons/contacts/1.svg" alt="Youtube"
+          /></a>
+          <a href="linkedin.com"
+            ><img src="./img/icons/contacts/2.svg" alt="LinkedIn"
+          /></a>
+          <a href="facebook.com"
+            ><img src="./img/icons/contacts/3.svg" alt="Facebook"
+          /></a>
+          <a href="instagram.com"
+            ><img src="./img/icons/contacts/4.svg" alt="instragram"
+          /></a>
+          <a href="t.me"
+            ><img src="./img/icons/contacts/5.svg" alt="telegram"
+          /></a>
+        </div>
+        <div class="card">
+          <h5 class="mb-[28px]">Отдел продаж</h5>
+          <h6 class="mb-[10px]">Телефон:</h6>
+          <div class="phones flex flex-col items-start mb-[25px]">
+            <span class="-mb-[15px]">(+998 55) 506-44-44</span>
+            <span class="-mb-[15px]">(+998 71) 257-60-00</span>
+            <span class="-mb-[15px]">(+998 98) 126-04-44</span>
+          </div>
+          <h6>E-mail: <span>sale@procab.uz</span></h6>
+        </div>
+        <div class="card">
+          <h5 class="mb-[28px]">Отдел маркетинга</h5>
+          <h6>E-mail: <span>pr@procab.uz</span></h6>
+        </div>
+        <div class="card">
+          <h5 class="mb-[28px]">Отдел экспорта</h5>
+          <h6>E-mail: <span>exp@procab.uz</span></h6>
+        </div>
+        <div class="card">
+          <h5 class="mb-[28px]">Отдел снабжения</h5>
+          <h6>E-mail: <span>purchase@procab.uz</span></h6>
+        </div>
+        <div class="card">
+          <h5 class="mb-[28px]">Отдел кадров</h5>
+          <h6>E-mail: <span>hr@procab.uz</span></h6>
+        </div>
+        <div class="card">
+          <h5 class="mb-[28px]">Отдел кадров</h5>
+          <h6>E-mail: <span>hr@procab.uz</span></h6>
+        </div>
       </div>
     </main>
     <!-- footer  -->
@@ -1004,6 +989,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts/index.js"></script>
-    <script src="./scripts/canculator.js"></script>
+    <script src="./scripts/contacts.js"></script>
   </body>
 </html>

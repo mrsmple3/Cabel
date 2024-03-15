@@ -412,6 +412,9 @@ body {
   line-height: 50px;
   word-wrap: break-word;
 }
+.recomendations .slider_img {
+  max-height: 160px;
+}
 .recomendations .card {
   position: relative;
   max-width: 270px;

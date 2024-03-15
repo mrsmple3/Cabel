@@ -1,0 +1,63 @@
+@import "../css/basic.scss";
+
+.references {
+  @include references;
+}
+.contacts {
+  h2 {
+    color: #484848;
+    font-size: 48px;
+    line-height: 50px;
+    word-wrap: break-word;
+    text-align: start;
+    @media screen and (max-width: 768px) {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+  h6 {
+    color: #e31e24;
+    font-size: 20px;
+    font-family: PF Encore Sans Pro;
+    font-weight: 500;
+    line-height: 23px;
+    word-wrap: break-word;
+  }
+  .phones {
+    color: #6d6d6d;
+    font-size: 26px;
+    font-family: PF Encore Sans Pro;
+    font-weight: 600;
+    line-height: 30px;
+    word-wrap: break-word;
+  }
+  .card {
+    padding: 34px 33px 36px 34px;
+    background-color: #f7f7f7;
+    border-radius: 30px;
+    margin-bottom: 19px;
+    h5 {
+      color: #484848;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 23px;
+      word-wrap: break-word;
+    }
+    h6 {
+      color: #939393;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 40px;
+      word-wrap: break-word;
+      span {
+        font-weight: 600;
+      }
+    }
+    .phones {
+      color: #939393;
+      font-size: 18px;
+      line-height: 40px;
+      word-wrap: break-word;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import "../css/basic.scss";
+
+.references {
+  @include references;
+}
+.sertificats {
+  h2 {
+    color: #484848;
+    font-size: 48px;
+    line-height: 50px;
+    word-wrap: break-word;
+    text-align: start;
+    @media screen and(max-width: 768px) {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+  p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 26px;
+    word-wrap: break-word;
+  }
+  .swiper-sertificats-button-prev,
+  .swiper-sertificats-button-next {
+    position: static;
+    &::after {
+      position: static;
+      font-size: 25px;
+      border: 2px solid red;
+      color: $red;
+      border-radius: 100%;
+      padding: 8px 15px;
+    }
+  }
+  .sertificats-slider {
+    img {
+      @media screen and (max-width: 768px) {
+        max-width: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}

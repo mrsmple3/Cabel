@@ -1,0 +1,44 @@
+@import "../css/basic.scss";
+
+.references {
+  @include references;
+}
+.mission {
+  h2 {
+    color: #484848;
+    font-size: 48px;
+    line-height: 50px;
+    word-wrap: break-word;
+    text-align: start;
+    @media screen and(max-width: 768px) {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+  .mission_content {
+    .red_title {
+      color: #e31e24;
+      font-size: 20px;
+      font-family: Montserrat;
+      font-weight: 600;
+      line-height: 26px;
+      word-wrap: break-word;
+    }
+    p {
+      color: rgba(69.06, 69.06, 69.06, 0.9);
+      font-size: 16px;
+      font-family: Montserrat;
+      font-weight: 400;
+      line-height: 26px;
+      word-wrap: break-word;
+    }
+    .black_title {
+      color: rgba(69.06, 69.06, 69.06, 0.9);
+      font-size: 18px;
+      font-family: Montserrat;
+      font-weight: 600;
+      line-height: 26px;
+      word-wrap: break-word;
+    }
+  }
+}

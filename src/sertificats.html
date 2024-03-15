@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./style/sass/canculator.css" />
+    <link rel="stylesheet" href="./style/sass/sertificats.css" />
     <link rel="stylesheet" href="./style/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -686,87 +686,44 @@
     </header>
     <!-- main -->
     <main
-      class="canculator max-w-[1210px] mx-auto first w-full overflow-hidden max-md:max-w-[380px] max-md:mt-[83px] max-xl:px-[10px]"
+      class="sertificats max-w-[1210px] mx-auto first w-full overflow-hidden max-md:max-w-[380px] max-md:mt-[83px] max-xl:px-[10px]"
     >
       <div class="references max-md:flex-wrap mb-[42px] max-md:mb-[32px]">
         <span>Главная</span>
         <img src="./img/icons/arrow_left_little.svg" alt=">" />
-        <span class="current_category">Калькулятор</span>
+        <span class="current_category">Миссия и ценности</span>
       </div>
-      <h2 class="mb-[51px]">Калькулятор</h2>
-      <div class="canculator_block mb-[116px]">
-        <div class="inputs">
-          <div class="input">
-            <label for="metre">Длина кабеля, м</label>
-            <input
-              id="metre"
-              type="number"
-              class="number_input"
-              oninput="this.value = Math.abs(this.value)"
-            />
-          </div>
-          <div class="input constructor_down relative">
-            <svg
-              width="15"
-              height="8"
-              viewBox="0 0 15 8"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="arrow_down absolute bottom-5 right-5"
-            >
-              <path
-                d="M7.54939 7.49817C7.08272 7.49817 6.64289 7.31617 6.31156 6.986L0.150391 0.824833L0.975224 0L7.13639 6.16117C7.35689 6.38167 7.74072 6.38167 7.96122 6.16117L14.1224 0L14.9472 0.824833L8.78606 6.986C8.45589 7.31617 8.01606 7.49817 7.54822 7.49817H7.54939Z"
-                fill="#5F5F5F"
-              />
-            </svg>
-            <label for="mark">Марка кабеля</label>
-            <div class="drop_down standart cursor-pointer">
-              <span class="current_option">Выберите вариант</span>
-              <ul
-                class="options w-full absolute left-0 top-[90px] h-[210px] overflow-y-auto"
-              >
-                <li class="option">Пункт 1</li>
-                <li class="option">Пункт 2</li>
-                <li class="option">Пункт 3</li>
-              </ul>
-            </div>
-          </div>
-          <div class="input constructor_down relative">
-            <svg
-              width="15"
-              height="8"
-              viewBox="0 0 15 8"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="arrow_down absolute bottom-5 right-5"
-            >
-              <path
-                d="M7.54939 7.49817C7.08272 7.49817 6.64289 7.31617 6.31156 6.986L0.150391 0.824833L0.975224 0L7.13639 6.16117C7.35689 6.38167 7.74072 6.38167 7.96122 6.16117L14.1224 0L14.9472 0.824833L8.78606 6.986C8.45589 7.31617 8.01606 7.49817 7.54822 7.49817H7.54939Z"
-                fill="#5F5F5F"
-              />
-            </svg>
-            <label for="mark">Тип Барабана</label>
-            <div class="drop_down standart cursor-pointer">
-              <span class="current_option">Выберите вариант</span>
-              <ul
-                class="options w-full absolute left-0 top-[90px] h-[210px] overflow-y-auto"
-              >
-                <li class="option">Пункт 1</li>
-                <li class="option">Пункт 2</li>
-                <li class="option">Пункт 3</li>
-              </ul>
-            </div>
+      <h2 class="mb-[30px]">Сертификаты</h2>
+      <p class="mb-[54px]">
+        Наша компания гордится предоставлением высочайшего качества
+        кабельно-проводниковой продукции, подтвержденного нашими сертификатами.
+        <br />
+        <br />
+        Мы придерживаемся самых строгих стандартов качества и безопасности.
+      </p>
+      <div class="flex flex-col items-start gap-[33px] mb-[142px]">
+        <div class="inline-flex items-center gap-[25px] justify-center">
+          <button
+            class="swiper-button-prev swiper-sertificats-button-prev w-[47px] h-[47px] inline-flex rounded-[100px] justify-center items-center"
+          ></button>
+          <button
+            class="swiper-button-next swiper-sertificats-button-next w-[47px] h-[47px] inline-flex rounded-[100px] justify-center items-center"
+          ></button>
+        </div>
+        <div class="sertificats-slider swiper w-full">
+          <div class="swiper-wrapper flex items-center justify-between">
+            <img src="./img/sertificats/1.png" alt="" class="swiper-slide" />
+            <img src="./img/sertificats/2.png" alt="" class="swiper-slide" />
+            <img src="./img/sertificats/3.png" alt="" class="swiper-slide" />
+            <img src="./img/sertificats/4.png" alt="" class="swiper-slide" />
+            <img src="./img/sertificats/5.png" alt="" class="swiper-slide" />
+            <img src="./img/sertificats/1.png" alt="" class="swiper-slide" />
+            <img src="./img/sertificats/2.png" alt="" class="swiper-slide" />
+            <img src="./img/sertificats/3.png" alt="" class="swiper-slide" />
+            <img src="./img/sertificats/4.png" alt="" class="swiper-slide" />
+            <img src="./img/sertificats/5.png" alt="" class="swiper-slide" />
           </div>
         </div>
-        <div
-          class="flex items-center justify-between flex-wrap gap-3 mb-[55px]"
-        >
-          <button class="raschitat">Рассчитать</button>
-          <button class="sbros">Рассчитать</button>
-        </div>
-        <span class="bottom_span"
-          >Источник: <span>Вес кабеля</span> на KALK.PRO</span
-        >
       </div>
     </main>
     <!-- footer  -->
@@ -1004,6 +961,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts/index.js"></script>
-    <script src="./scripts/canculator.js"></script>
+    <script src="./scripts/sertificats.js"></script>
   </body>
 </html>

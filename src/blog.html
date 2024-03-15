@@ -17,7 +17,7 @@
     <title>ProCab product</title>
   </head>
   <body class="wrapper overflow-x-hidden">
-    <!-- menu  -->
+    <!-- header  -->
     <div
       id="menu"
       class="xl:hidden w-full h-[92%] fixed top-[80px] left-0 right-0 z-[16] overflow-y-auto overflow-x-hidden bg-neutral-100 py-[60px] max-[400px]:pl-[10px]"
@@ -30,8 +30,11 @@
             class="menu-navbar items-start text-[#2F2F2F] text-[28px] leading-tight font-normal mb-[120px]"
           >
             <ul class="flex flex-col items-start gap-[30px] justify-start">
-              <li class="active">Главная</li>
-              <li id="menu-catalog" class="flex flex-col items-start relative">
+              <li class="active menu_navbar_item">Главная</li>
+              <li
+                id="menu-catalog"
+                class="flex flex-col items-start relative menu_navbar_item"
+              >
                 <div class="catalog">
                   <span class="text-nowrap">Каталог</span>
                   <svg
@@ -48,12 +51,12 @@
                   class="submenu menu-submenu_catalog flex flex-col items-start px-[25px] py-[26px] text-[23px] font-light leading-[29px]"
                 >
                   <a
-                    href=""
+                    href="./catalog.html"
                     class="transition-all duration-300 hover:text-red-600"
                     >Полный каталог продукции</a
                   >
                   <a
-                    href=""
+                    href="./constructor.html"
                     class="transition-all duration-300 hover:text-red-600"
                     >Конструктор</a
                   >
@@ -64,7 +67,10 @@
                   </a>
                 </div>
               </li>
-              <li id="menu-about" class="flex flex-col items-start relative">
+              <li
+                id="menu-about"
+                class="flex flex-col items-start relative menu_navbar_item"
+              >
                 <div class="about">
                   <span class="text-nowrap">О нас</span>
                   <svg
@@ -99,7 +105,7 @@
               </li>
               <li
                 id="menu-reference"
-                class="flex flex-col items-start relative"
+                class="flex flex-col items-start relative menu_navbar_item"
               >
                 <div class="reference">
                   <span class="text-nowrap">Референс-лист</span>
@@ -133,7 +139,10 @@
                   </a>
                 </div>
               </li>
-              <li id="menu-content" class="flex flex-col items-start relative">
+              <li
+                id="menu-content"
+                class="flex flex-col items-start relative menu_navbar_item"
+              >
                 <div class="content">
                   <span class="text-nowrap">ProCab Content</span>
                   <svg
@@ -166,7 +175,7 @@
                   </a>
                 </div>
               </li>
-              <li>Новости</li>
+              <li><a href="./blog.html">Новости</a></li>
               <li>Персонал</li>
               <li
                 class="langs flex items-center justify-start gap-3 text-[23px]"
@@ -230,7 +239,6 @@
         </div>
       </div>
     </div>
-    <!-- header  -->
     <header
       id="header"
       class="lock_padding max-md:fixed w-full z-[15] top-[0] flex flex-col items-center justify-center max-md:mb-[13px] max-md:overflow-x-hidden"
@@ -492,9 +500,13 @@
           </a>
           <nav class="nav_list max-lg:hidden">
             <ul class="navbar flex items-center gap-5 text-[#2F2F2F]">
-              <li class="hover:text-red-600">Главная</li>
-              <li id="catalog" class="catalog relative">
-                <span class="text-nowrap hover:text-red-600">Каталог</span>
+              <li class="hover:text-red-600 navbar_item">
+                <a href="">Главная</a>
+              </li>
+              <li id="catalog" class="catalog relative navbar_item">
+                <span class="text-nowrap hover:text-red-600"
+                  ><a href="">Каталог</a></span
+                >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="20"
@@ -508,12 +520,12 @@
                   class="submenu submenu_catalog w-[315px] max-w-[320px] absolute top-10 -left-[111px] flex flex-col items-start px-[25px] py-[26px] rounded-[20px] shadow bg-white text-lg font-light leading-[29px] z-[3]"
                 >
                   <a
-                    href=""
+                    href="./catalog.html"
                     class="transition-all duration-300 hover:text-red-600"
                     >Полный каталог продукции</a
                   >
                   <a
-                    href=""
+                    href="./constructor.html"
                     class="transition-all duration-300 hover:text-red-600"
                     >Конструктор</a
                   >
@@ -524,7 +536,7 @@
                   </a>
                 </div>
               </li>
-              <li id="about" class="about relative">
+              <li id="about" class="about relative navbar_item">
                 <span class="text-nowrap hover:text-red-600">О нас</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -555,7 +567,7 @@
                   </a>
                 </div>
               </li>
-              <li id="reference" class="reference relative">
+              <li id="reference" class="reference relative navbar_item">
                 <span class="text-nowrap hover:text-red-600"
                   >Референс-лист</span
                 >
@@ -588,7 +600,7 @@
                   </a>
                 </div>
               </li>
-              <li id="content" class="content relative">
+              <li id="content" class="content relative navbar_item">
                 <span class="text-nowrap hover:text-red-600"
                   >ProCab Content</span
                 >
@@ -621,8 +633,10 @@
                   </a>
                 </div>
               </li>
-              <li class="hover:text-red-600">Новости</li>
-              <li class="hover:text-red-600">Персонал</li>
+              <li class="hover:text-red-600">
+                <a href="./blog.html">Новости</a>
+              </li>
+              <li class="hover:text-red-600"><a href="">Персонал</a></li>
             </ul>
           </nav>
           <div class="flex items-center gap-4 relative">
@@ -641,14 +655,14 @@
                 />
               </svg>
             </div>
-            <a
+            <button
               href=""
               class="contacts_btn text-white contacts_btn px-[30px] py-3 transition-colors duration-300 bg-red-600 hover:text-red-600 hover:bg-white hover:border hover:border-red-600 border border-white rounded-tl-[30px] rounded-br-[30px] inline-flex justify-center items-center gap-2.5 max-xl:hidden"
             >
               <span class="text-xl font-light tracking-[1.2px] leading-tight"
                 >Контакты</span
               >
-            </a>
+            </button>
             <div class="h-10 w-12 py-[6.83px] lg:hidden"></div>
             <a
               href="#header"
@@ -673,7 +687,7 @@
       <div
         class="max-w-[1210px] mx-auto max-md:max-w-[380px] flex flex-col items-start mb-[117px]"
       >
-        <div class="references max-md:flex-wrap mb-[42px]">
+        <div class="references max-md:flex-wrap mb-[42px] max-md:mb-[32px]">
           <span>Категории продукции</span>
           <img src="./img/icons/arrow_left_little.svg" alt=">" />
           <span class="current_category">Новости</span>
