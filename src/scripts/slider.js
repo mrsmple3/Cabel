@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     adaptLoop = window.innerWidth < 768 ? false : true;
     swiperMain.update();
   });
+
   let swiperMain = new Swiper(".offer-slider", {
-    speed: 400,
     simulateTouch: adaptLoop,
     slidesPerView: 1,
     initialSlide: 0,
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: ".slide-text-next",
       prevEl: ".slide-text-prev",
     },
-    speed: 400,
+    speed: 250,
     simulateTouch: adaptLoop,
     slidesPerView: 1,
     initialSlide: 0,
@@ -45,15 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   let swiperImg = new Swiper(".img-slider", {
-    speed: 400,
     simulateTouch: adaptLoop,
     slidesPerView: 1,
     initialSlide: 0,
-    effect: "fade",
     autoHeight: true,
-    fadeEffect: {
-      crossFade: true,
-    },
     loop: adaptLoop,
   });
   swiperImg.controller.control = swiperText;

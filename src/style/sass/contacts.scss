@@ -60,4 +60,83 @@
       word-wrap: break-word;
     }
   }
+  .form {
+    top: 83px;
+    max-width: 735px;
+    width: 735px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 15px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    h4 {
+      color: #484848;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 23px;
+      word-wrap: break-word;
+    }
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 40px;
+      .input {
+        width: 100%;
+        font-size: 16px;
+        line-height: 23.2px;
+        font-weight: 300;
+        word-wrap: break-word;
+        background: white;
+        padding-bottom: 16px;
+        border-bottom: 1px #b8b8b8 solid;
+        outline: none;
+        &::placeholder {
+          color: rgba(158.31, 158.31, 158.31, 0.6);
+        }
+      }
+    }
+    textarea {
+      resize: none;
+      height: 115px;
+    }
+    .send_btn {
+      padding: 20px 55px;
+      background: #e31e24;
+      border-radius: 100px;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      gap: 34px;
+      display: inline-flex;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 15.84px;
+      word-wrap: break-word;
+      border: 1px $red solid;
+      transition: all 0.3s;
+      &:hover {
+        background-color: white;
+        color: $red;
+      }
+    }
+    .btn_sub {
+      max-width: 300px;
+      color: #aeaeae;
+      font-size: 14px;
+      line-height: 21.14px;
+      word-wrap: break-word;
+    }
+  }
+  .location_title {
+    &::marker {
+      margin-inline-start: 0; /* убираем отступ маркера */
+      margin-inline-end: 0.5em; /* задаем отступ между текстом и маркером */
+    }
+  }
 }

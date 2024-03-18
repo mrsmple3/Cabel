@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   transition: all 0.3s;
 }
@@ -283,4 +284,84 @@ header #search_block.top-0 {
   font-size: 18px;
   line-height: 40px;
   word-wrap: break-word;
+}
+.contacts .form {
+  top: 83px;
+  max-width: 735px;
+  width: 735px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 15px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+.contacts .form h4 {
+  color: #484848;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  word-wrap: break-word;
+}
+.contacts .form .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40px;
+}
+.contacts .form .inputs .input {
+  width: 100%;
+  font-size: 16px;
+  line-height: 23.2px;
+  font-weight: 300;
+  word-wrap: break-word;
+  background: white;
+  padding-bottom: 16px;
+  border-bottom: 1px #b8b8b8 solid;
+  outline: none;
+}
+.contacts .form .inputs .input::-moz-placeholder {
+  color: rgba(158, 158, 158, 0.6);
+}
+.contacts .form .inputs .input::placeholder {
+  color: rgba(158, 158, 158, 0.6);
+}
+.contacts .form textarea {
+  resize: none;
+  height: 115px;
+}
+.contacts .form .send_btn {
+  padding: 20px 55px;
+  background: #e31e24;
+  border-radius: 100px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+  display: inline-flex;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 15.84px;
+  word-wrap: break-word;
+  border: 1px #e31e24 solid;
+  transition: all 0.3s;
+}
+.contacts .form .send_btn:hover {
+  background-color: white;
+  color: #e31e24;
+}
+.contacts .form .btn_sub {
+  max-width: 300px;
+  color: #aeaeae;
+  font-size: 14px;
+  line-height: 21.14px;
+  word-wrap: break-word;
+}
+.contacts .location_title::marker {
+  margin-inline-start: 0; /* убираем отступ маркера */
+  margin-inline-end: 0.5em; /* задаем отступ между текстом и маркером */
 }/*# sourceMappingURL=contacts.css.map */
